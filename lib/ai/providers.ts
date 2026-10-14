@@ -1,4 +1,5 @@
-import { customProvider, gateway } from "ai";
+import { openai } from "@ai-sdk/openai";
+import { customProvider } from "ai";
 import { isTestEnvironment } from "../constants";
 import { titleModel } from "./models";
 
@@ -22,12 +23,13 @@ export function getLanguageModel(modelId: string) {
     return myProvider.languageModel(modelId);
   }
 
-  return gateway.languageModel(modelId);
+  // Direct OpenAI (only key available). Ids keep the gateway "openai/" prefix so model metadata lookups still work.
+  return openai(modelId.replace("openai/", ""));
 }
 
 export function getTitleModel() {
   if (isTestEnvironment && myProvider) {
     return myProvider.languageModel("title-model");
   }
-  return gateway.languageModel(titleModel.id);
+  return openai(titleModel.id.replace("openai/", ""));
 }
