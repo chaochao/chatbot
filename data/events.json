@@ -1,0 +1,4192 @@
+[
+  {
+    "id": "ev_0026",
+    "caseId": "VND-004",
+    "vendor": "Vendor 04",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-14T03:40:47.569990Z"
+  },
+  {
+    "id": "ev_0264",
+    "caseId": "VND-037",
+    "vendor": "Vendor 37",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-28T23:52:04.204429Z"
+  },
+  {
+    "id": "ev_0294",
+    "caseId": "VND-041",
+    "vendor": "Vendor 41",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-09-01T18:26:35.843264Z"
+  },
+  {
+    "id": "ev_0185",
+    "caseId": "VND-026",
+    "vendor": "Vendor 26",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-09T10:26:21.675326Z"
+  },
+  {
+    "id": "ev_0025",
+    "caseId": "VND-004",
+    "vendor": "Vendor 04",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-07-12T07:40:14.668565Z"
+  },
+  {
+    "id": "ev_0043",
+    "caseId": "VND-006",
+    "vendor": "Vendor 06",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-16T07:54:46.161648Z"
+  },
+  {
+    "id": "ev_0259",
+    "caseId": "VND-036",
+    "vendor": "Vendor 36",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-25T09:50:21.264451Z"
+  },
+  {
+    "id": "ev_0214",
+    "caseId": "VND-030",
+    "vendor": "Vendor 30",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-08-15T02:41:09.275146Z"
+  },
+  {
+    "id": "ev_0283",
+    "caseId": "VND-040",
+    "vendor": "Vendor 40",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-27T05:34:09.244038Z"
+  },
+  {
+    "id": "ev_0376",
+    "caseId": "VND-053",
+    "vendor": "Vendor 53",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-15T05:52:30.330633Z"
+  },
+  {
+    "id": "ev_0349",
+    "caseId": "VND-049",
+    "vendor": "Vendor 49",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-09-09T03:09:00.027541Z"
+  },
+  {
+    "id": "ev_0377",
+    "caseId": "VND-053",
+    "vendor": "Vendor 53",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-09-15T08:37:11.434296Z"
+  },
+  {
+    "id": "ev_9001",
+    "caseId": "VND-006",
+    "vendor": "Vendor 06",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-12T00:02:35.646306Z"
+  },
+  {
+    "id": "ev_0024",
+    "caseId": "VND-004",
+    "vendor": "Vendor 04",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-08T06:06:57.974862Z"
+  },
+  {
+    "id": "ev_0240",
+    "caseId": "VND-034",
+    "vendor": "Vendor 34",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-08-19T19:32:41.835983Z"
+  },
+  {
+    "id": "ev_0146",
+    "caseId": "VND-021",
+    "vendor": "Vendor 21",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-31T11:16:39.078578Z"
+  },
+  {
+    "id": "ev_0158",
+    "caseId": "VND-022",
+    "vendor": "Vendor 22",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-05T14:50:14.508168Z"
+  },
+  {
+    "id": "ev_0380",
+    "caseId": "VND-053",
+    "vendor": "Vendor 53",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-20T21:45:44.816871Z"
+  },
+  {
+    "id": "ev_0070",
+    "caseId": "VND-010",
+    "vendor": "Vendor 10",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-27T21:27:06.763429Z"
+  },
+  {
+    "id": "ev_0323",
+    "caseId": "VND-045",
+    "vendor": "Vendor 45",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-09-05T14:55:27.130743Z"
+  },
+  {
+    "id": "ev_0363",
+    "caseId": "VND-051",
+    "vendor": "Vendor 51",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-09-10T21:48:58.092773Z"
+  },
+  {
+    "id": "ev_0222",
+    "caseId": "VND-031",
+    "vendor": "Vendor 31",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-16T11:44:21.227975Z"
+  },
+  {
+    "id": "ev_0241",
+    "caseId": "VND-034",
+    "vendor": "Vendor 34",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-20T14:01:38.838445Z"
+  },
+  {
+    "id": "ev_0181",
+    "caseId": "VND-025",
+    "vendor": "Vendor 25",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-11T06:17:49.430747Z"
+  },
+  {
+    "id": "ev_0171",
+    "caseId": "VND-024",
+    "vendor": "Vendor 24",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-11T19:40:35.592538Z"
+  },
+  {
+    "id": "ev_0130",
+    "caseId": "VND-018",
+    "vendor": "Vendor 18",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-01T11:00:29.361450Z"
+  },
+  {
+    "id": "ev_0379",
+    "caseId": "VND-053",
+    "vendor": "Vendor 53",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-20T09:29:12.303452Z"
+  },
+  {
+    "id": "ev_0327",
+    "caseId": "VND-045",
+    "vendor": "Vendor 45",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-16T05:57:19.330040Z"
+  },
+  {
+    "id": "ev_0096",
+    "caseId": "VND-014",
+    "vendor": "Vendor 14",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-23T00:19:17.577631Z"
+  },
+  {
+    "id": "ev_0274",
+    "caseId": "VND-038",
+    "vendor": "Vendor 38",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-05T20:08:19.943979Z"
+  },
+  {
+    "id": "ev_0269",
+    "caseId": "VND-038",
+    "vendor": "Vendor 38",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-24T04:37:55.172966Z"
+  },
+  {
+    "id": "ev_0210",
+    "caseId": "VND-030",
+    "vendor": "Vendor 30",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-08-12T12:10:59.784449Z"
+  },
+  {
+    "id": "ev_0003",
+    "caseId": "VND-001",
+    "vendor": "Vendor 01",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-07-04T01:25:20.792178Z"
+  },
+  {
+    "id": "ev_0322",
+    "caseId": "VND-045",
+    "vendor": "Vendor 45",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-05T04:39:43.880494Z"
+  },
+  {
+    "id": "ev_0316",
+    "caseId": "VND-044",
+    "vendor": "Vendor 44",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-12T15:51:48.264303Z"
+  },
+  {
+    "id": "ev_0213",
+    "caseId": "VND-030",
+    "vendor": "Vendor 30",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-14T19:57:45.837364Z"
+  },
+  {
+    "id": "ev_0221",
+    "caseId": "VND-031",
+    "vendor": "Vendor 31",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-08-14T17:21:39.800619Z"
+  },
+  {
+    "id": "ev_0037",
+    "caseId": "VND-005",
+    "vendor": "Vendor 05",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-12T19:10:20.284786Z"
+  },
+  {
+    "id": "ev_0084",
+    "caseId": "VND-012",
+    "vendor": "Vendor 12",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-07-25T21:42:33.157601Z"
+  },
+  {
+    "id": "ev_0397",
+    "caseId": "VND-056",
+    "vendor": "Vendor 56",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-23T12:54:05.127819Z"
+  },
+  {
+    "id": "ev_0007",
+    "caseId": "VND-001",
+    "vendor": "Vendor 01",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-11T04:31:49.468595Z"
+  },
+  {
+    "id": "ev_0086",
+    "caseId": "VND-012",
+    "vendor": "Vendor 12",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-27T04:20:56.670785Z"
+  },
+  {
+    "id": "ev_0352",
+    "caseId": "VND-049",
+    "vendor": "Vendor 49",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-14T18:48:08.687903Z"
+  },
+  {
+    "id": "ev_0109",
+    "caseId": "VND-015",
+    "vendor": "Vendor 15",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-02T11:48:46.804428Z"
+  },
+  {
+    "id": "ev_0318",
+    "caseId": "VND-044",
+    "vendor": "Vendor 44",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-12T23:10:09.047604Z"
+  },
+  {
+    "id": "ev_0260",
+    "caseId": "VND-036",
+    "vendor": "Vendor 36",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-25T11:00:58.911671Z"
+  },
+  {
+    "id": "ev_0234",
+    "caseId": "VND-033",
+    "vendor": "Vendor 33",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-19T05:34:13.819624Z"
+  },
+  {
+    "id": "ev_0138",
+    "caseId": "VND-020",
+    "vendor": "Vendor 20",
+    "activity": "Request more info",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-31T01:40:45.535253Z"
+  },
+  {
+    "id": "ev_0075",
+    "caseId": "VND-011",
+    "vendor": "Vendor 11",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-18T11:47:33.665731Z"
+  },
+  {
+    "id": "ev_0211",
+    "caseId": "VND-030",
+    "vendor": "Vendor 30",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-13T00:37:17.571123Z"
+  },
+  {
+    "id": "ev_0252",
+    "caseId": "VND-035",
+    "vendor": "Vendor 35",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-30T22:41:27.403040Z"
+  },
+  {
+    "id": "ev_0076",
+    "caseId": "VND-011",
+    "vendor": "Vendor 11",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-07-19T19:35:19.382104Z"
+  },
+  {
+    "id": "ev_0002",
+    "caseId": "VND-001",
+    "vendor": "Vendor 01",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-03T19:49:51.152322Z"
+  },
+  {
+    "id": "ev_0359",
+    "caseId": "VND-050",
+    "vendor": "Vendor 50",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-09-16T19:10:18.169127Z"
+  },
+  {
+    "id": "ev_0242",
+    "caseId": "VND-034",
+    "vendor": "Vendor 34",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-21T13:04:54.968312Z"
+  },
+  {
+    "id": "ev_0205",
+    "caseId": "VND-029",
+    "vendor": "Vendor 29",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-08-14T03:21:57.842601Z"
+  },
+  {
+    "id": "ev_0394",
+    "caseId": "VND-056",
+    "vendor": "Vendor 56",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-09-18T22:15:16.024471Z"
+  },
+  {
+    "id": "ev_0331",
+    "caseId": "VND-046",
+    "vendor": "Vendor 46",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-09-06T12:35:22.992782Z"
+  },
+  {
+    "id": "ev_0056",
+    "caseId": "VND-008",
+    "vendor": "Vendor 08",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-17T01:20:56.766873Z"
+  },
+  {
+    "id": "ev_0142",
+    "caseId": "VND-020",
+    "vendor": "Vendor 20",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-03T14:17:38.717628Z"
+  },
+  {
+    "id": "ev_0289",
+    "caseId": "VND-040",
+    "vendor": "Vendor 40",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-04T05:57:59.798297Z"
+  },
+  {
+    "id": "ev_0340",
+    "caseId": "VND-047",
+    "vendor": "Vendor 47",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-09T20:02:42.086853Z"
+  },
+  {
+    "id": "ev_0198",
+    "caseId": "VND-028",
+    "vendor": "Vendor 28",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-08-10T19:27:33.896418Z"
+  },
+  {
+    "id": "ev_0311",
+    "caseId": "VND-043",
+    "vendor": "Vendor 43",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-04T13:45:27.560082Z"
+  },
+  {
+    "id": "ev_0180",
+    "caseId": "VND-025",
+    "vendor": "Vendor 25",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-11T04:55:39.718938Z"
+  },
+  {
+    "id": "ev_0257",
+    "caseId": "VND-036",
+    "vendor": "Vendor 36",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-23T18:32:44.986284Z"
+  },
+  {
+    "id": "ev_0053",
+    "caseId": "VND-008",
+    "vendor": "Vendor 08",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-07-14T16:28:35.044998Z"
+  },
+  {
+    "id": "ev_0060",
+    "caseId": "VND-009",
+    "vendor": "Vendor 09",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-07-19T19:43:58.024136Z"
+  },
+  {
+    "id": "ev_0017",
+    "caseId": "VND-003",
+    "vendor": "Vendor 03",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-06T22:31:14.192598Z"
+  },
+  {
+    "id": "ev_0224",
+    "caseId": "VND-031",
+    "vendor": "Vendor 31",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-19T16:57:54.719546Z"
+  },
+  {
+    "id": "ev_0035",
+    "caseId": "VND-005",
+    "vendor": "Vendor 05",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-12T09:14:06.489076Z"
+  },
+  {
+    "id": "ev_0388",
+    "caseId": "VND-054",
+    "vendor": "Vendor 54",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-27T14:16:17.420999Z"
+  },
+  {
+    "id": "ev_0116",
+    "caseId": "VND-016",
+    "vendor": "Vendor 16",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-29T01:54:51.422448Z"
+  },
+  {
+    "id": "ev_0262",
+    "caseId": "VND-037",
+    "vendor": "Vendor 37",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-24T03:53:43.276200Z"
+  },
+  {
+    "id": "ev_0074",
+    "caseId": "VND-011",
+    "vendor": "Vendor 11",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-18T06:39:59.513890Z"
+  },
+  {
+    "id": "ev_0112",
+    "caseId": "VND-016",
+    "vendor": "Vendor 16",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-25T08:42:10.520225Z"
+  },
+  {
+    "id": "ev_0334",
+    "caseId": "VND-046",
+    "vendor": "Vendor 46",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-08T03:57:48.448535Z"
+  },
+  {
+    "id": "ev_0094",
+    "caseId": "VND-014",
+    "vendor": "Vendor 14",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-07-21T05:14:38.078617Z"
+  },
+  {
+    "id": "ev_0059",
+    "caseId": "VND-009",
+    "vendor": "Vendor 09",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-16T22:13:35.545180Z"
+  },
+  {
+    "id": "ev_0121",
+    "caseId": "VND-017",
+    "vendor": "Vendor 17",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-30T21:10:07.839476Z"
+  },
+  {
+    "id": "ev_0355",
+    "caseId": "VND-050",
+    "vendor": "Vendor 50",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-10T07:13:04.397166Z"
+  },
+  {
+    "id": "ev_0166",
+    "caseId": "VND-024",
+    "vendor": "Vendor 24",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-08-04T02:04:24.448698Z"
+  },
+  {
+    "id": "ev_0127",
+    "caseId": "VND-018",
+    "vendor": "Vendor 18",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-29T00:39:13.601435Z"
+  },
+  {
+    "id": "ev_0272",
+    "caseId": "VND-038",
+    "vendor": "Vendor 38",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-05T08:16:49.349156Z"
+  },
+  {
+    "id": "ev_0097",
+    "caseId": "VND-014",
+    "vendor": "Vendor 14",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-07-27T01:48:10.391212Z"
+  },
+  {
+    "id": "ev_0277",
+    "caseId": "VND-039",
+    "vendor": "Vendor 39",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-08-26T00:07:11.664552Z"
+  },
+  {
+    "id": "ev_0365",
+    "caseId": "VND-051",
+    "vendor": "Vendor 51",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-09-11T09:00:17.993299-07:00"
+  },
+  {
+    "id": "ev_0313",
+    "caseId": "VND-044",
+    "vendor": "Vendor 44",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-01T20:56:07.549384Z"
+  },
+  {
+    "id": "ev_0041",
+    "caseId": "VND-006",
+    "vendor": "Vendor 06",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-12T00:02:35.646306Z"
+  },
+  {
+    "id": "ev_0250",
+    "caseId": "VND-035",
+    "vendor": "Vendor 35",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-08-25T23:34:06.239096Z"
+  },
+  {
+    "id": "ev_0273",
+    "caseId": "VND-038",
+    "vendor": "Vendor 38",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-05T17:57:55.573898Z"
+  },
+  {
+    "id": "ev_0301",
+    "caseId": "VND-042",
+    "vendor": "Vendor 42",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-04T14:12:51.378006Z"
+  },
+  {
+    "id": "ev_0014",
+    "caseId": "VND-002",
+    "vendor": "Vendor 02",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-09T23:21:40.031465Z"
+  },
+  {
+    "id": "ev_0144",
+    "caseId": "VND-020",
+    "vendor": "Vendor 20",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-03T23:41:59.285823Z"
+  },
+  {
+    "id": "ev_0015",
+    "caseId": "VND-003",
+    "vendor": "Vendor 03",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-07-05T22:08:22.059993Z"
+  },
+  {
+    "id": "ev_0154",
+    "caseId": "VND-022",
+    "vendor": "Vendor 22",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-08-01T17:38:48.597801Z"
+  },
+  {
+    "id": "ev_0200",
+    "caseId": "VND-028",
+    "vendor": "Vendor 28",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-16T13:51:34.047951Z"
+  },
+  {
+    "id": "ev_0216",
+    "caseId": "VND-030",
+    "vendor": "Vendor 30",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-08-16T18:08:34.223170Z"
+  },
+  {
+    "id": "ev_0312",
+    "caseId": "VND-044",
+    "vendor": "Vendor 44",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-09-01T02:41:37.402807Z"
+  },
+  {
+    "id": "ev_0021",
+    "caseId": "VND-003",
+    "vendor": "Vendor 03",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-13T20:48:21.956980Z"
+  },
+  {
+    "id": "ev_0134",
+    "caseId": "VND-019",
+    "vendor": "Vendor 19",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-30T21:27:10.698398Z"
+  },
+  {
+    "id": "ev_0361",
+    "caseId": "VND-050",
+    "vendor": "Vendor 50",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-18T16:44:43.864595Z"
+  },
+  {
+    "id": "ev_0235",
+    "caseId": "VND-033",
+    "vendor": "Vendor 33",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-20T22:40:45.918517Z"
+  },
+  {
+    "id": "ev_0046",
+    "caseId": "VND-007",
+    "vendor": "Vendor 07",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-11T15:11:16.273330Z"
+  },
+  {
+    "id": "ev_0248",
+    "caseId": "VND-035",
+    "vendor": "Vendor 35",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-22T10:43:01.356797Z"
+  },
+  {
+    "id": "ev_0188",
+    "caseId": "VND-026",
+    "vendor": "Vendor 26",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-11T00:35:00.640158Z"
+  },
+  {
+    "id": "ev_0382",
+    "caseId": "VND-054",
+    "vendor": "Vendor 54",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Priya Nair",
+    "tool": "Jira",
+    "timestamp": "2026-09-15T02:41:09.892618Z"
+  },
+  {
+    "id": "ev_0228",
+    "caseId": "VND-032",
+    "vendor": "Vendor 32",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-08-16T01:49:49.692340Z"
+  },
+  {
+    "id": "ev_0371",
+    "caseId": "VND-052",
+    "vendor": "Vendor 52",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-13T22:50:06.756601Z"
+  },
+  {
+    "id": "ev_0008",
+    "caseId": "VND-002",
+    "vendor": "Vendor 02",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-07-04T12:26:23.125979Z"
+  },
+  {
+    "id": "ev_0087",
+    "caseId": "VND-013",
+    "vendor": "Vendor 13",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-07-19T17:24:41.617240Z"
+  },
+  {
+    "id": "ev_0170",
+    "caseId": "VND-024",
+    "vendor": "Vendor 24",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-11T08:00:25.186387Z"
+  },
+  {
+    "id": "ev_0036",
+    "caseId": "VND-005",
+    "vendor": "Vendor 05",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-12T18:43:19.028756Z"
+  },
+  {
+    "id": "ev_0387",
+    "caseId": "VND-054",
+    "vendor": "Vendor 54",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-27T12:37:25.145349Z"
+  },
+  {
+    "id": "ev_0141",
+    "caseId": "VND-020",
+    "vendor": "Vendor 20",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-08-01T14:48:08.535902Z"
+  },
+  {
+    "id": "ev_0245",
+    "caseId": "VND-035",
+    "vendor": "Vendor 35",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-08-19T13:38:44.923083Z"
+  },
+  {
+    "id": "ev_0247",
+    "caseId": "VND-035",
+    "vendor": "Vendor 35",
+    "activity": "Request more info",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-21T18:29:40.802888Z"
+  },
+  {
+    "id": "ev_0309",
+    "caseId": "VND-043",
+    "vendor": "Vendor 43",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-03T18:58:25.426237Z"
+  },
+  {
+    "id": "ev_0286",
+    "caseId": "VND-040",
+    "vendor": "Vendor 40",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-08-29T13:48:36.282111Z"
+  },
+  {
+    "id": "ev_0285",
+    "caseId": "VND-040",
+    "vendor": "Vendor 40",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-29T06:00:49.659393Z"
+  },
+  {
+    "id": "ev_0268",
+    "caseId": "VND-038",
+    "vendor": "Vendor 38",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Priya Nair",
+    "tool": "Jira",
+    "timestamp": "2026-08-23T19:21:04.283180Z"
+  },
+  {
+    "id": "ev_0063",
+    "caseId": "VND-009",
+    "vendor": "Vendor 09",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-23T04:44:47.514170Z"
+  },
+  {
+    "id": "ev_0199",
+    "caseId": "VND-028",
+    "vendor": "Vendor 28",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-13T01:28:01.648153Z"
+  },
+  {
+    "id": "ev_0010",
+    "caseId": "VND-002",
+    "vendor": "Vendor 02",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-05T19:47:57.715888Z"
+  },
+  {
+    "id": "ev_0310",
+    "caseId": "VND-043",
+    "vendor": "Vendor 43",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-04T12:28:40.732600Z"
+  },
+  {
+    "id": "ev_0089",
+    "caseId": "VND-013",
+    "vendor": "Vendor 13",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-20T16:38:25.097551Z"
+  },
+  {
+    "id": "ev_0339",
+    "caseId": "VND-047",
+    "vendor": "Vendor 47",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-09T04:59:50.191744Z"
+  },
+  {
+    "id": "ev_0353",
+    "caseId": "VND-049",
+    "vendor": "Vendor 49",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-14T20:47:21.200436Z"
+  },
+  {
+    "id": "ev_0114",
+    "caseId": "VND-016",
+    "vendor": "Vendor 16",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-28T19:07:09.555290Z"
+  },
+  {
+    "id": "ev_0047",
+    "caseId": "VND-007",
+    "vendor": "Vendor 07",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-12T19:47:20.620578Z"
+  },
+  {
+    "id": "ev_0396",
+    "caseId": "VND-056",
+    "vendor": "Vendor 56",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-23T06:58:42.542521Z"
+  },
+  {
+    "id": "ev_0417",
+    "caseId": "VND-060",
+    "vendor": "Vendor 60",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": null,
+    "tool": "Jira",
+    "timestamp": "2026-09-24T18:50:50.461746Z"
+  },
+  {
+    "id": "ev_0172",
+    "caseId": "VND-024",
+    "vendor": "Vendor 24",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-11T23:21:57.742189Z"
+  },
+  {
+    "id": "ev_0299",
+    "caseId": "VND-042",
+    "vendor": "Vendor 42",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-30T08:19:40.386580Z"
+  },
+  {
+    "id": "ev_0333",
+    "caseId": "VND-046",
+    "vendor": "Vendor 46",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-08T00:38:14.830212Z"
+  },
+  {
+    "id": "ev_0153",
+    "caseId": "VND-022",
+    "vendor": "Vendor 22",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": null,
+    "tool": "Jira",
+    "timestamp": "2026-08-01T16:11:29.744759Z"
+  },
+  {
+    "id": "ev_0057",
+    "caseId": "VND-009",
+    "vendor": "Vendor 09",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-07-14T03:29:28.509275Z"
+  },
+  {
+    "id": "ev_0107",
+    "caseId": "VND-015",
+    "vendor": "Vendor 15",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-01T19:26:15.542084Z"
+  },
+  {
+    "id": "ev_0098",
+    "caseId": "VND-014",
+    "vendor": "Vendor 14",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-28T17:43:07.778110Z"
+  },
+  {
+    "id": "ev_0054",
+    "caseId": "VND-008",
+    "vendor": "Vendor 08",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-16T15:36:22.438642Z"
+  },
+  {
+    "id": "ev_0162",
+    "caseId": "VND-023",
+    "vendor": "Vendor 23",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-11T02:05:48.146175Z"
+  },
+  {
+    "id": "ev_0027",
+    "caseId": "VND-004",
+    "vendor": "Vendor 04",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-14T12:05:37.140733Z"
+  },
+  {
+    "id": "ev_0354",
+    "caseId": "VND-050",
+    "vendor": "Vendor 50",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": null,
+    "tool": "Jira",
+    "timestamp": "2026-09-09T12:55:39.174915Z"
+  },
+  {
+    "id": "ev_0342",
+    "caseId": "VND-048",
+    "vendor": "Vendor 48",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-09-06T18:18:55.839237Z"
+  },
+  {
+    "id": "ev_0129",
+    "caseId": "VND-018",
+    "vendor": "Vendor 18",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-01T07:28:14.440638Z"
+  },
+  {
+    "id": "ev_0102",
+    "caseId": "VND-015",
+    "vendor": "Vendor 15",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-23T10:33:59.334875Z"
+  },
+  {
+    "id": "ev_0184",
+    "caseId": "VND-026",
+    "vendor": "Vendor 26",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-08-07T16:32:25.805220Z"
+  },
+  {
+    "id": "ev_0320",
+    "caseId": "VND-045",
+    "vendor": "Vendor 45",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-03T14:54:09.989511Z"
+  },
+  {
+    "id": "ev_0329",
+    "caseId": "VND-046",
+    "vendor": "Vendor 46",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-05T00:01:38.861166Z"
+  },
+  {
+    "id": "ev_0044",
+    "caseId": "VND-006",
+    "vendor": "Vendor 06",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-16T09:43:25.776016Z"
+  },
+  {
+    "id": "ev_0373",
+    "caseId": "VND-052",
+    "vendor": "Vendor 52",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-16T08:45:08.742176Z"
+  },
+  {
+    "id": "ev_0400",
+    "caseId": "VND-057",
+    "vendor": "Vendor 57",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-21T08:58:15.343016Z"
+  },
+  {
+    "id": "ev_0028",
+    "caseId": "VND-004",
+    "vendor": "Vendor 04",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-14T16:15:12.790529Z"
+  },
+  {
+    "id": "ev_0058",
+    "caseId": "VND-009",
+    "vendor": "Vendor 09",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-16T16:52:48.202913Z"
+  },
+  {
+    "id": "ev_0051",
+    "caseId": "VND-008",
+    "vendor": "Vendor 08",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-13T05:48:56.154579Z"
+  },
+  {
+    "id": "ev_0372",
+    "caseId": "VND-052",
+    "vendor": "Vendor 52",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-15T19:13:36.869667Z"
+  },
+  {
+    "id": "ev_0295",
+    "caseId": "VND-041",
+    "vendor": "Vendor 41",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-02T14:50:29.331435Z"
+  },
+  {
+    "id": "ev_0418",
+    "caseId": "VND-060",
+    "vendor": "Vendor 60",
+    "activity": "Request more info",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-28T15:34:51.284732Z"
+  },
+  {
+    "id": "ev_0386",
+    "caseId": "VND-054",
+    "vendor": "Vendor 54",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-09-27T06:39:12.579977Z"
+  },
+  {
+    "id": "ev_0013",
+    "caseId": "VND-002",
+    "vendor": "Vendor 02",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-09T21:50:24.630867Z"
+  },
+  {
+    "id": "ev_0105",
+    "caseId": "VND-015",
+    "vendor": "Vendor 15",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-25T12:02:27.950566Z"
+  },
+  {
+    "id": "ev_0083",
+    "caseId": "VND-012",
+    "vendor": "Vendor 12",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-20T10:24:21.170794Z"
+  },
+  {
+    "id": "ev_0161",
+    "caseId": "VND-023",
+    "vendor": "Vendor 23",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-08-05T09:15:26.957913Z"
+  },
+  {
+    "id": "ev_0239",
+    "caseId": "VND-034",
+    "vendor": "Vendor 34",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-19T10:15:24.682229Z"
+  },
+  {
+    "id": "ev_0395",
+    "caseId": "VND-056",
+    "vendor": "Vendor 56",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-09-20T20:25:25.155446Z"
+  },
+  {
+    "id": "ev_0350",
+    "caseId": "VND-049",
+    "vendor": "Vendor 49",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-09-11T23:59:57.777932Z"
+  },
+  {
+    "id": "ev_0072",
+    "caseId": "VND-010",
+    "vendor": "Vendor 10",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-29T00:06:38.431456Z"
+  },
+  {
+    "id": "ev_0090",
+    "caseId": "VND-013",
+    "vendor": "Vendor 13",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-07-26T12:07:13.806062Z"
+  },
+  {
+    "id": "ev_0139",
+    "caseId": "VND-020",
+    "vendor": "Vendor 20",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-31T08:25:20.902843Z"
+  },
+  {
+    "id": "ev_0152",
+    "caseId": "VND-022",
+    "vendor": "Vendor 22",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Priya Nair",
+    "tool": "Jira",
+    "timestamp": "2026-08-01T06:09:20.808121Z"
+  },
+  {
+    "id": "ev_0407",
+    "caseId": "VND-058",
+    "vendor": "Vendor 58",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-21T13:26:07.748177Z"
+  },
+  {
+    "id": "ev_0018",
+    "caseId": "VND-003",
+    "vendor": "Vendor 03",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-07-11T19:46:47.839693Z"
+  },
+  {
+    "id": "ev_0292",
+    "caseId": "VND-041",
+    "vendor": "Vendor 41",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-28T19:34:42.957645Z"
+  },
+  {
+    "id": "ev_0253",
+    "caseId": "VND-035",
+    "vendor": "Vendor 35",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-31T00:23:58.814079Z"
+  },
+  {
+    "id": "ev_0256",
+    "caseId": "VND-036",
+    "vendor": "Vendor 36",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-08-22T10:50:47.590924Z"
+  },
+  {
+    "id": "ev_0113",
+    "caseId": "VND-016",
+    "vendor": "Vendor 16",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-07-26T18:48:32.699768Z"
+  },
+  {
+    "id": "ev_0065",
+    "caseId": "VND-010",
+    "vendor": "Vendor 10",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-15T23:44:02.017886Z"
+  },
+  {
+    "id": "ev_0175",
+    "caseId": "VND-025",
+    "vendor": "Vendor 25",
+    "activity": "Request more info",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-08T02:55:52.579898Z"
+  },
+  {
+    "id": "ev_0375",
+    "caseId": "VND-053",
+    "vendor": "Vendor 53",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Priya Nair",
+    "tool": "Jira",
+    "timestamp": "2026-09-13T14:18:51.330288Z"
+  },
+  {
+    "id": "ev_0202",
+    "caseId": "VND-028",
+    "vendor": "Vendor 28",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-16T21:49:39.325734Z"
+  },
+  {
+    "id": "ev_0119",
+    "caseId": "VND-017",
+    "vendor": "Vendor 17",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-07-26T21:51:26.998280Z"
+  },
+  {
+    "id": "ev_0368",
+    "caseId": "VND-051",
+    "vendor": "Vendor 51",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-17T03:18:35.267652Z"
+  },
+  {
+    "id": "ev_0413",
+    "caseId": "VND-059",
+    "vendor": "Vendor 59",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-28T23:49:20.740767Z"
+  },
+  {
+    "id": "ev_0230",
+    "caseId": "VND-032",
+    "vendor": "Vendor 32",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-21T22:02:32.527137Z"
+  },
+  {
+    "id": "ev_0163",
+    "caseId": "VND-023",
+    "vendor": "Vendor 23",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-12T08:17:03.859862Z"
+  },
+  {
+    "id": "ev_0237",
+    "caseId": "VND-033",
+    "vendor": "Vendor 33",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-21T05:48:38.630386Z"
+  },
+  {
+    "id": "ev_0078",
+    "caseId": "VND-011",
+    "vendor": "Vendor 11",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-31T10:37:13.623851Z"
+  },
+  {
+    "id": "ev_0335",
+    "caseId": "VND-047",
+    "vendor": "Vendor 47",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-09-05T10:25:55.704827Z"
+  },
+  {
+    "id": "ev_0351",
+    "caseId": "VND-049",
+    "vendor": "Vendor 49",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-14T07:34:17.098533Z"
+  },
+  {
+    "id": "ev_0101",
+    "caseId": "VND-015",
+    "vendor": "Vendor 15",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-07-22T13:47:48.175475Z"
+  },
+  {
+    "id": "ev_0232",
+    "caseId": "VND-032",
+    "vendor": "Vendor 32",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-22T08:21:28.340731Z"
+  },
+  {
+    "id": "ev_0336",
+    "caseId": "VND-047",
+    "vendor": "Vendor 47",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-05T21:37:59.684324Z"
+  },
+  {
+    "id": "ev_0258",
+    "caseId": "VND-036",
+    "vendor": "Vendor 36",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-25T00:58:55.987961Z"
+  },
+  {
+    "id": "ev_0356",
+    "caseId": "VND-050",
+    "vendor": "Vendor 50",
+    "activity": "Request more info",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-11T11:40:02.339293Z"
+  },
+  {
+    "id": "ev_0263",
+    "caseId": "VND-037",
+    "vendor": "Vendor 37",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-08-24T14:29:04.413074Z"
+  },
+  {
+    "id": "ev_0016",
+    "caseId": "VND-003",
+    "vendor": "Vendor 03",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-06T15:43:56.398598Z"
+  },
+  {
+    "id": "ev_0125",
+    "caseId": "VND-018",
+    "vendor": "Vendor 18",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-27T15:10:04.895257Z"
+  },
+  {
+    "id": "ev_0328",
+    "caseId": "VND-046",
+    "vendor": "Vendor 46",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-09-03T21:40:31.942096Z"
+  },
+  {
+    "id": "ev_0145",
+    "caseId": "VND-021",
+    "vendor": "Vendor 21",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-07-30T22:52:09.912080Z"
+  },
+  {
+    "id": "ev_0370",
+    "caseId": "VND-052",
+    "vendor": "Vendor 52",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-09-12T08:29:36.130700Z"
+  },
+  {
+    "id": "ev_0091",
+    "caseId": "VND-013",
+    "vendor": "Vendor 13",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-28T08:55:25.450154Z"
+  },
+  {
+    "id": "ev_0050",
+    "caseId": "VND-008",
+    "vendor": "Vendor 08",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-07-12T15:23:58.717292Z"
+  },
+  {
+    "id": "ev_0314",
+    "caseId": "VND-044",
+    "vendor": "Vendor 44",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-09-02T04:28:24.015279Z"
+  },
+  {
+    "id": "ev_0360",
+    "caseId": "VND-050",
+    "vendor": "Vendor 50",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-18T11:54:40.554523Z"
+  },
+  {
+    "id": "ev_0195",
+    "caseId": "VND-027",
+    "vendor": "Vendor 27",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-16T06:49:15.642293Z"
+  },
+  {
+    "id": "ev_0281",
+    "caseId": "VND-039",
+    "vendor": "Vendor 39",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-30T14:11:26.566901Z"
+  },
+  {
+    "id": "ev_0282",
+    "caseId": "VND-040",
+    "vendor": "Vendor 40",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-08-26T16:08:14.871210Z"
+  },
+  {
+    "id": "ev_0254",
+    "caseId": "VND-036",
+    "vendor": "Vendor 36",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Priya Nair",
+    "tool": "Jira",
+    "timestamp": "2026-08-20T23:25:07.418180Z"
+  },
+  {
+    "id": "ev_0174",
+    "caseId": "VND-025",
+    "vendor": "Vendor 25",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-06T23:36:20.261613Z"
+  },
+  {
+    "id": "ev_0330",
+    "caseId": "VND-046",
+    "vendor": "Vendor 46",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-09-05T08:08:19.891445Z"
+  },
+  {
+    "id": "ev_0062",
+    "caseId": "VND-009",
+    "vendor": "Vendor 09",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-23T02:15:48.185055Z"
+  },
+  {
+    "id": "ev_0384",
+    "caseId": "VND-054",
+    "vendor": "Vendor 54",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-09-16T00:30:56.531866Z"
+  },
+  {
+    "id": "ev_0067",
+    "caseId": "VND-010",
+    "vendor": "Vendor 10",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-22T19:42:08.326093Z"
+  },
+  {
+    "id": "ev_0304",
+    "caseId": "VND-042",
+    "vendor": "Vendor 42",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-07T01:16:52.861154Z"
+  },
+  {
+    "id": "ev_0173",
+    "caseId": "VND-025",
+    "vendor": "Vendor 25",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-08-05T11:42:13.856207Z"
+  },
+  {
+    "id": "ev_0409",
+    "caseId": "VND-059",
+    "vendor": "Vendor 59",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-09-22T00:33:36.034302Z"
+  },
+  {
+    "id": "ev_0302",
+    "caseId": "VND-042",
+    "vendor": "Vendor 42",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-09-06T19:06:03.314524Z"
+  },
+  {
+    "id": "ev_0411",
+    "caseId": "VND-059",
+    "vendor": "Vendor 59",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-09-23T10:02:03.328482Z"
+  },
+  {
+    "id": "ev_0206",
+    "caseId": "VND-029",
+    "vendor": "Vendor 29",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-08-16T14:26:28.581630Z"
+  },
+  {
+    "id": "ev_0045",
+    "caseId": "VND-007",
+    "vendor": "Vendor 07",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": null,
+    "tool": "Jira",
+    "timestamp": "2026-07-11T08:41:20.161410Z"
+  },
+  {
+    "id": "ev_0066",
+    "caseId": "VND-010",
+    "vendor": "Vendor 10",
+    "activity": "Request more info",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-22T02:20:30.752383Z"
+  },
+  {
+    "id": "ev_0034",
+    "caseId": "VND-005",
+    "vendor": "Vendor 05",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-07-10T22:45:39.556870Z"
+  },
+  {
+    "id": "ev_0291",
+    "caseId": "VND-041",
+    "vendor": "Vendor 41",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Priya Nair",
+    "tool": "Jira",
+    "timestamp": "2026-08-27T23:44:59.056725Z"
+  },
+  {
+    "id": "ev_0246",
+    "caseId": "VND-035",
+    "vendor": "Vendor 35",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-20T01:23:05.952498Z"
+  },
+  {
+    "id": "ev_0378",
+    "caseId": "VND-053",
+    "vendor": "Vendor 53",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-09-17T07:30:34.948598Z"
+  },
+  {
+    "id": "ev_0369",
+    "caseId": "VND-051",
+    "vendor": "Vendor 51",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-17T09:10:54.962492Z"
+  },
+  {
+    "id": "ev_0159",
+    "caseId": "VND-023",
+    "vendor": "Vendor 23",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Priya Nair",
+    "tool": "Jira",
+    "timestamp": "2026-08-02T19:47:51.402416Z"
+  },
+  {
+    "id": "ev_0229",
+    "caseId": "VND-032",
+    "vendor": "Vendor 32",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-19T12:48:14.841308Z"
+  },
+  {
+    "id": "ev_0080",
+    "caseId": "VND-012",
+    "vendor": "Vendor 12",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-07-18T07:39:31.516011Z"
+  },
+  {
+    "id": "ev_0150",
+    "caseId": "VND-021",
+    "vendor": "Vendor 21",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-08T07:28:48.472797Z"
+  },
+  {
+    "id": "ev_0140",
+    "caseId": "VND-020",
+    "vendor": "Vendor 20",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-07-31T15:34:19.389756Z"
+  },
+  {
+    "id": "ev_0383",
+    "caseId": "VND-054",
+    "vendor": "Vendor 54",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-15T21:09:22.311403Z"
+  },
+  {
+    "id": "ev_0308",
+    "caseId": "VND-043",
+    "vendor": "Vendor 43",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-09-02T23:13:56.947421Z"
+  },
+  {
+    "id": "ev_0319",
+    "caseId": "VND-045",
+    "vendor": "Vendor 45",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-09-02T10:53:43.254622Z"
+  },
+  {
+    "id": "ev_0009",
+    "caseId": "VND-002",
+    "vendor": "Vendor 02",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-05T05:45:53.527563Z"
+  },
+  {
+    "id": "ev_0218",
+    "caseId": "VND-030",
+    "vendor": "Vendor 30",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-16T22:27:21.125463Z"
+  },
+  {
+    "id": "ev_0219",
+    "caseId": "VND-031",
+    "vendor": "Vendor 31",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-08-13T21:44:36.453674Z"
+  },
+  {
+    "id": "ev_0279",
+    "caseId": "VND-039",
+    "vendor": "Vendor 39",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-30T04:14:36.443918Z"
+  },
+  {
+    "id": "ev_0406",
+    "caseId": "VND-058",
+    "vendor": "Vendor 58",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-09-20T19:39:49.209053Z"
+  },
+  {
+    "id": "ev_0225",
+    "caseId": "VND-031",
+    "vendor": "Vendor 31",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-19T19:47:47.271599Z"
+  },
+  {
+    "id": "ev_0169",
+    "caseId": "VND-024",
+    "vendor": "Vendor 24",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-09T01:05:45.932528Z"
+  },
+  {
+    "id": "ev_0324",
+    "caseId": "VND-045",
+    "vendor": "Vendor 45",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-09-14T22:00:57.393315Z"
+  },
+  {
+    "id": "ev_0267",
+    "caseId": "VND-037",
+    "vendor": "Vendor 37",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-30T12:35:10.590662Z"
+  },
+  {
+    "id": "ev_0132",
+    "caseId": "VND-019",
+    "vendor": "Vendor 19",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-29T04:27:02.706329Z"
+  },
+  {
+    "id": "ev_0029",
+    "caseId": "VND-005",
+    "vendor": "Vendor 05",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-07-08T14:40:18.331418Z"
+  },
+  {
+    "id": "ev_0191",
+    "caseId": "VND-027",
+    "vendor": "Vendor 27",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-08-09T08:01:12.202744Z"
+  },
+  {
+    "id": "ev_0031",
+    "caseId": "VND-005",
+    "vendor": "Vendor 05",
+    "activity": "Request more info",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-09T12:36:11.294562Z"
+  },
+  {
+    "id": "ev_0341",
+    "caseId": "VND-047",
+    "vendor": "Vendor 47",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-10T00:05:21.345785Z"
+  },
+  {
+    "id": "ev_0231",
+    "caseId": "VND-032",
+    "vendor": "Vendor 32",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-22T06:31:08.011410Z"
+  },
+  {
+    "id": "ev_0398",
+    "caseId": "VND-056",
+    "vendor": "Vendor 56",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-23T13:51:17.966928Z"
+  },
+  {
+    "id": "ev_0357",
+    "caseId": "VND-050",
+    "vendor": "Vendor 50",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-11T18:48:54.796861Z"
+  },
+  {
+    "id": "ev_0115",
+    "caseId": "VND-016",
+    "vendor": "Vendor 16",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-29T01:10:13.329313Z"
+  },
+  {
+    "id": "ev_0068",
+    "caseId": "VND-010",
+    "vendor": "Vendor 10",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-07-23T04:51:56.634831Z"
+  },
+  {
+    "id": "ev_0390",
+    "caseId": "VND-055",
+    "vendor": "Vendor 55",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-17T04:48:57.960101Z"
+  },
+  {
+    "id": "ev_0270",
+    "caseId": "VND-038",
+    "vendor": "Vendor 38",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-08-24T07:26:23.353636Z"
+  },
+  {
+    "id": "ev_0192",
+    "caseId": "VND-027",
+    "vendor": "Vendor 27",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-15T05:58:54.525164Z"
+  },
+  {
+    "id": "ev_0303",
+    "caseId": "VND-042",
+    "vendor": "Vendor 42",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-06T22:30:53.451435Z"
+  },
+  {
+    "id": "ev_0111",
+    "caseId": "VND-016",
+    "vendor": "Vendor 16",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-25T01:35:14.333631Z"
+  },
+  {
+    "id": "ev_0110",
+    "caseId": "VND-016",
+    "vendor": "Vendor 16",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-07-24T00:14:23.736091Z"
+  },
+  {
+    "id": "ev_0204",
+    "caseId": "VND-029",
+    "vendor": "Vendor 29",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-13T22:47:56.926921Z"
+  },
+  {
+    "id": "ev_0403",
+    "caseId": "VND-057",
+    "vendor": "Vendor 57",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-28T11:10:36.710831Z"
+  },
+  {
+    "id": "ev_0385",
+    "caseId": "VND-054",
+    "vendor": "Vendor 54",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-17T10:10:42.464333Z"
+  },
+  {
+    "id": "ev_0143",
+    "caseId": "VND-020",
+    "vendor": "Vendor 20",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-03T21:12:21.356301Z"
+  },
+  {
+    "id": "ev_0165",
+    "caseId": "VND-023",
+    "vendor": "Vendor 23",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-12T13:35:39.131808Z"
+  },
+  {
+    "id": "ev_0347",
+    "caseId": "VND-049",
+    "vendor": "Vendor 49",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-09-08T04:06:49.344541Z"
+  },
+  {
+    "id": "ev_0039",
+    "caseId": "VND-006",
+    "vendor": "Vendor 06",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-10T16:03:36.255458Z"
+  },
+  {
+    "id": "ev_0402",
+    "caseId": "VND-057",
+    "vendor": "Vendor 57",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-09-25T22:43:20.163911Z"
+  },
+  {
+    "id": "ev_0177",
+    "caseId": "VND-025",
+    "vendor": "Vendor 25",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-08-08T13:19:12.752942Z"
+  },
+  {
+    "id": "ev_0079",
+    "caseId": "VND-011",
+    "vendor": "Vendor 11",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-31T12:15:16.288591Z"
+  },
+  {
+    "id": "ev_0315",
+    "caseId": "VND-044",
+    "vendor": "Vendor 44",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-09-09T20:54:14.724755Z"
+  },
+  {
+    "id": "ev_0278",
+    "caseId": "VND-039",
+    "vendor": "Vendor 39",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-28T06:22:57.136749Z"
+  },
+  {
+    "id": "ev_0156",
+    "caseId": "VND-022",
+    "vendor": "Vendor 22",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-04T19:55:38.007069Z"
+  },
+  {
+    "id": "ev_0133",
+    "caseId": "VND-019",
+    "vendor": "Vendor 19",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-30T13:41:08.172648Z"
+  },
+  {
+    "id": "ev_0305",
+    "caseId": "VND-043",
+    "vendor": "Vendor 43",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-08-30T20:08:25.024655Z"
+  },
+  {
+    "id": "ev_0186",
+    "caseId": "VND-026",
+    "vendor": "Vendor 26",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-10T17:20:03.081090Z"
+  },
+  {
+    "id": "ev_0108",
+    "caseId": "VND-015",
+    "vendor": "Vendor 15",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-02T05:02:17.675423Z"
+  },
+  {
+    "id": "ev_0055",
+    "caseId": "VND-008",
+    "vendor": "Vendor 08",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-16T23:51:31.894620Z"
+  },
+  {
+    "id": "ev_0194",
+    "caseId": "VND-027",
+    "vendor": "Vendor 27",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-16T03:41:04.250019Z"
+  },
+  {
+    "id": "ev_0106",
+    "caseId": "VND-015",
+    "vendor": "Vendor 15",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-07-29T07:42:34.539554Z"
+  },
+  {
+    "id": "ev_0048",
+    "caseId": "VND-007",
+    "vendor": "Vendor 07",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-13T16:56:39.837624Z"
+  },
+  {
+    "id": "ev_0201",
+    "caseId": "VND-028",
+    "vendor": "Vendor 28",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-16T20:02:33.847129Z"
+  },
+  {
+    "id": "ev_0196",
+    "caseId": "VND-028",
+    "vendor": "Vendor 28",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-08-09T18:10:45.454889Z"
+  },
+  {
+    "id": "ev_0131",
+    "caseId": "VND-019",
+    "vendor": "Vendor 19",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-07-28T02:26:07.849110Z"
+  },
+  {
+    "id": "ev_0337",
+    "caseId": "VND-047",
+    "vendor": "Vendor 47",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-09-06T04:42:33.801984Z"
+  },
+  {
+    "id": "ev_0085",
+    "caseId": "VND-012",
+    "vendor": "Vendor 12",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-26T17:46:55.425023-07:00"
+  },
+  {
+    "id": "ev_0227",
+    "caseId": "VND-032",
+    "vendor": "Vendor 32",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-15T13:09:22.278873-07:00"
+  },
+  {
+    "id": "ev_0271",
+    "caseId": "VND-038",
+    "vendor": "Vendor 38",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-09-02T01:29:54.624751Z"
+  },
+  {
+    "id": "ev_0367",
+    "caseId": "VND-051",
+    "vendor": "Vendor 51",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-16T13:44:45.281717Z"
+  },
+  {
+    "id": "ev_0071",
+    "caseId": "VND-010",
+    "vendor": "Vendor 10",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-28T21:06:49.496238Z"
+  },
+  {
+    "id": "ev_0100",
+    "caseId": "VND-014",
+    "vendor": "Vendor 14",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-28T23:11:50.690879Z"
+  },
+  {
+    "id": "ev_0416",
+    "caseId": "VND-060",
+    "vendor": "Vendor 60",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-09-23T12:34:51.212295Z"
+  },
+  {
+    "id": "ev_0249",
+    "caseId": "VND-035",
+    "vendor": "Vendor 35",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": null,
+    "tool": "Email",
+    "timestamp": "2026-08-22T13:28:32.778137Z"
+  },
+  {
+    "id": "ev_0366",
+    "caseId": "VND-051",
+    "vendor": "Vendor 51",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-09-13T18:53:04.057815-07:00"
+  },
+  {
+    "id": "ev_0126",
+    "caseId": "VND-018",
+    "vendor": "Vendor 18",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-27T21:10:32.987002Z"
+  },
+  {
+    "id": "ev_0399",
+    "caseId": "VND-057",
+    "vendor": "Vendor 57",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Priya Nair",
+    "tool": "Jira",
+    "timestamp": "2026-09-19T09:55:34.768745Z"
+  },
+  {
+    "id": "ev_0392",
+    "caseId": "VND-056",
+    "vendor": "Vendor 56",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-09-18T02:15:53.177879Z"
+  },
+  {
+    "id": "ev_0117",
+    "caseId": "VND-017",
+    "vendor": "Vendor 17",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-07-25T09:57:51.619278Z"
+  },
+  {
+    "id": "ev_0082",
+    "caseId": "VND-012",
+    "vendor": "Vendor 12",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-07-19T11:45:23.867149Z"
+  },
+  {
+    "id": "ev_0148",
+    "caseId": "VND-021",
+    "vendor": "Vendor 21",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-03T05:58:49.297365Z"
+  },
+  {
+    "id": "ev_0182",
+    "caseId": "VND-026",
+    "vendor": "Vendor 26",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-08-07T02:53:55.634023Z"
+  },
+  {
+    "id": "ev_0190",
+    "caseId": "VND-027",
+    "vendor": "Vendor 27",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-09T02:53:19.277047Z"
+  },
+  {
+    "id": "ev_0197",
+    "caseId": "VND-028",
+    "vendor": "Vendor 28",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-10T15:05:00.321360Z"
+  },
+  {
+    "id": "ev_0306",
+    "caseId": "VND-043",
+    "vendor": "Vendor 43",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-01T23:18:05.443326Z"
+  },
+  {
+    "id": "ev_0358",
+    "caseId": "VND-050",
+    "vendor": "Vendor 50",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-09-12T09:33:15.771484Z"
+  },
+  {
+    "id": "ev_0183",
+    "caseId": "VND-026",
+    "vendor": "Vendor 26",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-07T06:53:44.915023Z"
+  },
+  {
+    "id": "ev_0120",
+    "caseId": "VND-017",
+    "vendor": "Vendor 17",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-07-29T13:16:49.590684Z"
+  },
+  {
+    "id": "ev_0011",
+    "caseId": "VND-002",
+    "vendor": "Vendor 02",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-07-07T08:39:09.596838Z"
+  },
+  {
+    "id": "ev_0212",
+    "caseId": "VND-030",
+    "vendor": "Vendor 30",
+    "activity": "Request more info",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-13T12:31:07.361342Z"
+  },
+  {
+    "id": "ev_0343",
+    "caseId": "VND-048",
+    "vendor": "Vendor 48",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-07T14:54:23.361044Z"
+  },
+  {
+    "id": "ev_0404",
+    "caseId": "VND-057",
+    "vendor": "Vendor 57",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-28T16:58:22.523708Z"
+  },
+  {
+    "id": "ev_0095",
+    "caseId": "VND-014",
+    "vendor": "Vendor 14",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-22T15:49:02.225418Z"
+  },
+  {
+    "id": "ev_0405",
+    "caseId": "VND-057",
+    "vendor": "Vendor 57",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-28T21:55:58.673354Z"
+  },
+  {
+    "id": "ev_0136",
+    "caseId": "VND-020",
+    "vendor": "Vendor 20",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-07-29T15:30:06.540466Z"
+  },
+  {
+    "id": "ev_0022",
+    "caseId": "VND-004",
+    "vendor": "Vendor 04",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-07-07T06:45:42.711254Z"
+  },
+  {
+    "id": "ev_0223",
+    "caseId": "VND-031",
+    "vendor": "Vendor 31",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-19T00:11:05.598654Z"
+  },
+  {
+    "id": "ev_0040",
+    "caseId": "VND-006",
+    "vendor": "Vendor 06",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-11T05:36:03.078521Z"
+  },
+  {
+    "id": "ev_0345",
+    "caseId": "VND-048",
+    "vendor": "Vendor 48",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-10T14:19:13.754713Z"
+  },
+  {
+    "id": "ev_0217",
+    "caseId": "VND-030",
+    "vendor": "Vendor 30",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-16T21:16:52.570156Z"
+  },
+  {
+    "id": "ev_0203",
+    "caseId": "VND-029",
+    "vendor": "Vendor 29",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-08-10T17:04:07.018917-07:00"
+  },
+  {
+    "id": "ev_0393",
+    "caseId": "VND-056",
+    "vendor": "Vendor 56",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-18T18:14:23.578626Z"
+  },
+  {
+    "id": "ev_0209",
+    "caseId": "VND-029",
+    "vendor": "Vendor 29",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-18T16:09:39.431047Z"
+  },
+  {
+    "id": "ev_0364",
+    "caseId": "VND-051",
+    "vendor": "Vendor 51",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-11T12:37:54.232132Z"
+  },
+  {
+    "id": "ev_0093",
+    "caseId": "VND-013",
+    "vendor": "Vendor 13",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-29T11:28:58.645580Z"
+  },
+  {
+    "id": "ev_0005",
+    "caseId": "VND-001",
+    "vendor": "Vendor 01",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-10T08:20:30.926689Z"
+  },
+  {
+    "id": "ev_0064",
+    "caseId": "VND-010",
+    "vendor": "Vendor 10",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-07-15T11:04:05.020142Z"
+  },
+  {
+    "id": "ev_0362",
+    "caseId": "VND-050",
+    "vendor": "Vendor 50",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-18T18:57:30.349417Z"
+  },
+  {
+    "id": "ev_0157",
+    "caseId": "VND-022",
+    "vendor": "Vendor 22",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-05T13:15:57.842736Z"
+  },
+  {
+    "id": "ev_0215",
+    "caseId": "VND-030",
+    "vendor": "Vendor 30",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-16T00:41:40.010801Z"
+  },
+  {
+    "id": "ev_0137",
+    "caseId": "VND-020",
+    "vendor": "Vendor 20",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-30T02:02:22.573514Z"
+  },
+  {
+    "id": "ev_0042",
+    "caseId": "VND-006",
+    "vendor": "Vendor 06",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-07-16T01:09:06.362180Z"
+  },
+  {
+    "id": "ev_0317",
+    "caseId": "VND-044",
+    "vendor": "Vendor 44",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-12T22:27:31.917589Z"
+  },
+  {
+    "id": "ev_0332",
+    "caseId": "VND-046",
+    "vendor": "Vendor 46",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-07T10:55:18.345438Z"
+  },
+  {
+    "id": "ev_0012",
+    "caseId": "VND-002",
+    "vendor": "Vendor 02",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-09T11:34:57.929281Z"
+  },
+  {
+    "id": "ev_0207",
+    "caseId": "VND-029",
+    "vendor": "Vendor 29",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-18T09:52:17.523433Z"
+  },
+  {
+    "id": "ev_0238",
+    "caseId": "VND-034",
+    "vendor": "Vendor 34",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Priya Nair",
+    "tool": "Jira",
+    "timestamp": "2026-08-18T03:33:09.537367Z"
+  },
+  {
+    "id": "ev_0030",
+    "caseId": "VND-005",
+    "vendor": "Vendor 05",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-08T17:52:30.545648Z"
+  },
+  {
+    "id": "ev_0208",
+    "caseId": "VND-029",
+    "vendor": "Vendor 29",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-18T15:26:54.238045Z"
+  },
+  {
+    "id": "ev_0220",
+    "caseId": "VND-031",
+    "vendor": "Vendor 31",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-14T14:53:16.995400Z"
+  },
+  {
+    "id": "ev_0410",
+    "caseId": "VND-059",
+    "vendor": "Vendor 59",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-23T06:52:30.046534Z"
+  },
+  {
+    "id": "ev_0077",
+    "caseId": "VND-011",
+    "vendor": "Vendor 11",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-31T02:31:30.955813Z"
+  },
+  {
+    "id": "ev_0193",
+    "caseId": "VND-027",
+    "vendor": "Vendor 27",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-15T23:59:31.334881Z"
+  },
+  {
+    "id": "ev_0297",
+    "caseId": "VND-041",
+    "vendor": "Vendor 41",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-03T00:12:09.600447Z"
+  },
+  {
+    "id": "ev_0401",
+    "caseId": "VND-057",
+    "vendor": "Vendor 57",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-09-21T15:28:19.631168-07:00"
+  },
+  {
+    "id": "ev_0179",
+    "caseId": "VND-025",
+    "vendor": "Vendor 25",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-10T22:59:22.011010Z"
+  },
+  {
+    "id": "ev_0128",
+    "caseId": "VND-018",
+    "vendor": "Vendor 18",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-07-31T21:14:01.485263Z"
+  },
+  {
+    "id": "ev_0287",
+    "caseId": "VND-040",
+    "vendor": "Vendor 40",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-09-01T10:35:24.031380Z"
+  },
+  {
+    "id": "ev_0147",
+    "caseId": "VND-021",
+    "vendor": "Vendor 21",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-31T19:34:02.834377Z"
+  },
+  {
+    "id": "ev_0293",
+    "caseId": "VND-041",
+    "vendor": "Vendor 41",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-08-28T21:26:40.008304Z"
+  },
+  {
+    "id": "ev_0073",
+    "caseId": "VND-011",
+    "vendor": "Vendor 11",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-07-16T23:26:21.487300Z"
+  },
+  {
+    "id": "ev_0391",
+    "caseId": "VND-055",
+    "vendor": "Vendor 55",
+    "activity": "Request more info",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-19T04:25:02.017692Z"
+  },
+  {
+    "id": "ev_0348",
+    "caseId": "VND-049",
+    "vendor": "Vendor 49",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-09-08T23:19:28.274993Z"
+  },
+  {
+    "id": "ev_0118",
+    "caseId": "VND-017",
+    "vendor": "Vendor 17",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-26T10:37:19.907032Z"
+  },
+  {
+    "id": "ev_0280",
+    "caseId": "VND-039",
+    "vendor": "Vendor 39",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-30T11:14:16.049558Z"
+  },
+  {
+    "id": "ev_0006",
+    "caseId": "VND-001",
+    "vendor": "Vendor 01",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-11T01:22:30.951037Z"
+  },
+  {
+    "id": "ev_0032",
+    "caseId": "VND-005",
+    "vendor": "Vendor 05",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-09T15:13:23.779191Z"
+  },
+  {
+    "id": "ev_0276",
+    "caseId": "VND-039",
+    "vendor": "Vendor 39",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-25T19:37:42.116936Z"
+  },
+  {
+    "id": "ev_0325",
+    "caseId": "VND-045",
+    "vendor": "Vendor 45",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-15T22:30:43.062071Z"
+  },
+  {
+    "id": "ev_0261",
+    "caseId": "VND-037",
+    "vendor": "Vendor 37",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Priya Nair",
+    "tool": "Jira",
+    "timestamp": "2026-08-22T09:04:56.822071Z"
+  },
+  {
+    "id": "ev_0381",
+    "caseId": "VND-053",
+    "vendor": "Vendor 53",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-21T06:14:57.645269Z"
+  },
+  {
+    "id": "ev_0123",
+    "caseId": "VND-017",
+    "vendor": "Vendor 17",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-31T05:54:49.993321Z"
+  },
+  {
+    "id": "ev_0298",
+    "caseId": "VND-042",
+    "vendor": "Vendor 42",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-08-29T06:27:15.064169Z"
+  },
+  {
+    "id": "ev_0374",
+    "caseId": "VND-052",
+    "vendor": "Vendor 52",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-16T10:10:30.538944Z"
+  },
+  {
+    "id": "ev_0088",
+    "caseId": "VND-013",
+    "vendor": "Vendor 13",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-20T10:56:47.596686Z"
+  },
+  {
+    "id": "ev_0049",
+    "caseId": "VND-007",
+    "vendor": "Vendor 07",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-13T18:54:01.840055Z"
+  },
+  {
+    "id": "ev_0168",
+    "caseId": "VND-024",
+    "vendor": "Vendor 24",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-08-05T06:08:05.003813Z"
+  },
+  {
+    "id": "ev_0081",
+    "caseId": "VND-012",
+    "vendor": "Vendor 12",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-19T02:33:46.338416Z"
+  },
+  {
+    "id": "ev_0243",
+    "caseId": "VND-034",
+    "vendor": "Vendor 34",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-21T21:49:58.540011Z"
+  },
+  {
+    "id": "ev_0020",
+    "caseId": "VND-003",
+    "vendor": "Vendor 03",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-13T16:34:46.884523Z"
+  },
+  {
+    "id": "ev_0389",
+    "caseId": "VND-055",
+    "vendor": "Vendor 55",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-09-16T15:40:00.626550Z"
+  },
+  {
+    "id": "ev_0004",
+    "caseId": "VND-001",
+    "vendor": "Vendor 01",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-07-08T21:40:09.751259Z"
+  },
+  {
+    "id": "ev_0178",
+    "caseId": "VND-025",
+    "vendor": "Vendor 25",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-08-10T13:11:23.985565Z"
+  },
+  {
+    "id": "ev_0038",
+    "caseId": "VND-006",
+    "vendor": "Vendor 06",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": null,
+    "tool": "Jira",
+    "timestamp": "2026-07-10T01:33:56.172152Z"
+  },
+  {
+    "id": "ev_0275",
+    "caseId": "VND-039",
+    "vendor": "Vendor 39",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-08-25T06:42:20.569830Z"
+  },
+  {
+    "id": "ev_0187",
+    "caseId": "VND-026",
+    "vendor": "Vendor 26",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-10T22:39:48.207178Z"
+  },
+  {
+    "id": "ev_0019",
+    "caseId": "VND-003",
+    "vendor": "Vendor 03",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-13T10:36:02.478413Z"
+  },
+  {
+    "id": "ev_0284",
+    "caseId": "VND-040",
+    "vendor": "Vendor 40",
+    "activity": "Request more info",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-28T22:10:49.562912Z"
+  },
+  {
+    "id": "ev_0104",
+    "caseId": "VND-015",
+    "vendor": "Vendor 15",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-24T22:59:01.703876-07:00"
+  },
+  {
+    "id": "ev_0033",
+    "caseId": "VND-005",
+    "vendor": "Vendor 05",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-07-09T18:40:00.873442Z"
+  },
+  {
+    "id": "ev_0124",
+    "caseId": "VND-018",
+    "vendor": "Vendor 18",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-07-26T15:40:58.266306Z"
+  },
+  {
+    "id": "ev_0176",
+    "caseId": "VND-025",
+    "vendor": "Vendor 25",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-08T11:39:48.160998Z"
+  },
+  {
+    "id": "ev_0244",
+    "caseId": "VND-034",
+    "vendor": "Vendor 34",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-22T00:49:22.378532Z"
+  },
+  {
+    "id": "ev_0266",
+    "caseId": "VND-037",
+    "vendor": "Vendor 37",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-30T11:18:33.286183Z"
+  },
+  {
+    "id": "ev_0160",
+    "caseId": "VND-023",
+    "vendor": "Vendor 23",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-04T07:22:27.308101Z"
+  },
+  {
+    "id": "ev_0255",
+    "caseId": "VND-036",
+    "vendor": "Vendor 36",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-22T06:12:48.414600Z"
+  },
+  {
+    "id": "ev_0408",
+    "caseId": "VND-058",
+    "vendor": "Vendor 58",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-09-22T08:54:07.942892Z"
+  },
+  {
+    "id": "ev_0300",
+    "caseId": "VND-042",
+    "vendor": "Vendor 42",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-08-31T08:00:00.362731Z"
+  },
+  {
+    "id": "ev_0236",
+    "caseId": "VND-033",
+    "vendor": "Vendor 33",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-21T04:00:54.216013Z"
+  },
+  {
+    "id": "ev_0412",
+    "caseId": "VND-059",
+    "vendor": "Vendor 59",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-09-25T09:51:45.858173Z"
+  },
+  {
+    "id": "ev_0414",
+    "caseId": "VND-059",
+    "vendor": "Vendor 59",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-29T21:06:23.457460Z"
+  },
+  {
+    "id": "ev_0151",
+    "caseId": "VND-021",
+    "vendor": "Vendor 21",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-08-08T08:41:00.700016Z"
+  },
+  {
+    "id": "ev_0164",
+    "caseId": "VND-023",
+    "vendor": "Vendor 23",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-08-12T13:08:10.000099Z"
+  },
+  {
+    "id": "ev_0326",
+    "caseId": "VND-045",
+    "vendor": "Vendor 45",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-16T04:04:22.579253Z"
+  },
+  {
+    "id": "ev_0023",
+    "caseId": "VND-004",
+    "vendor": "Vendor 04",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Jira",
+    "timestamp": "2026-07-07T15:03:36.920870Z"
+  },
+  {
+    "id": "ev_0307",
+    "caseId": "VND-043",
+    "vendor": "Vendor 43",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Email",
+    "timestamp": "2026-09-02T01:46:39.099359Z"
+  },
+  {
+    "id": "ev_0251",
+    "caseId": "VND-035",
+    "vendor": "Vendor 35",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-30T19:07:02.631271Z"
+  },
+  {
+    "id": "ev_0155",
+    "caseId": "VND-022",
+    "vendor": "Vendor 22",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Vanta",
+    "timestamp": "2026-08-04T06:40:32.556045Z"
+  },
+  {
+    "id": "ev_0226",
+    "caseId": "VND-032",
+    "vendor": "Vendor 32",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Maya Chen",
+    "tool": "Jira",
+    "timestamp": "2026-08-15T06:46:32.344107Z"
+  },
+  {
+    "id": "ev_0167",
+    "caseId": "VND-024",
+    "vendor": "Vendor 24",
+    "activity": "Procurement review",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Jira",
+    "timestamp": "2026-08-04T23:56:14.466338Z"
+  },
+  {
+    "id": "ev_0415",
+    "caseId": "VND-059",
+    "vendor": "Vendor 59",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-30T03:28:59.839745Z"
+  },
+  {
+    "id": "ev_0052",
+    "caseId": "VND-008",
+    "vendor": "Vendor 08",
+    "activity": "Security questionnaire sent",
+    "team": "Security",
+    "actor": "Ben Ito",
+    "tool": "Email",
+    "timestamp": "2026-07-13T10:09:54.139692Z"
+  },
+  {
+    "id": "ev_0344",
+    "caseId": "VND-048",
+    "vendor": "Vendor 48",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-09T14:51:30.329547Z"
+  },
+  {
+    "id": "ev_0265",
+    "caseId": "VND-037",
+    "vendor": "Vendor 37",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-30T05:40:06.557251Z"
+  },
+  {
+    "id": "ev_0099",
+    "caseId": "VND-014",
+    "vendor": "Vendor 14",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-28T21:26:55.686269Z"
+  },
+  {
+    "id": "ev_0338",
+    "caseId": "VND-047",
+    "vendor": "Vendor 47",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-09-07T09:24:44.369822Z"
+  },
+  {
+    "id": "ev_0189",
+    "caseId": "VND-027",
+    "vendor": "Vendor 27",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Tom Becker",
+    "tool": "Jira",
+    "timestamp": "2026-08-08T08:13:02.858101Z"
+  },
+  {
+    "id": "ev_0149",
+    "caseId": "VND-021",
+    "vendor": "Vendor 21",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-08-08T00:55:40.613807Z"
+  },
+  {
+    "id": "ev_0061",
+    "caseId": "VND-009",
+    "vendor": "Vendor 09",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-07-22T18:40:45.603945Z"
+  },
+  {
+    "id": "ev_0290",
+    "caseId": "VND-040",
+    "vendor": "Vendor 40",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-04T06:45:05.164040Z"
+  },
+  {
+    "id": "ev_0346",
+    "caseId": "VND-048",
+    "vendor": "Vendor 48",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-10T15:05:24.553648Z"
+  },
+  {
+    "id": "ev_0233",
+    "caseId": "VND-033",
+    "vendor": "Vendor 33",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-08-16T15:12:20.110309Z"
+  },
+  {
+    "id": "ev_0122",
+    "caseId": "VND-017",
+    "vendor": "Vendor 17",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-31T03:16:58.580303Z"
+  },
+  {
+    "id": "ev_0321",
+    "caseId": "VND-045",
+    "vendor": "Vendor 45",
+    "activity": "Request more info",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-09-05T00:22:48.367170Z"
+  },
+  {
+    "id": "ev_0103",
+    "caseId": "VND-015",
+    "vendor": "Vendor 15",
+    "activity": "Request more info",
+    "team": "Procurement",
+    "actor": "J. Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-24T10:00:52.305207Z"
+  },
+  {
+    "id": "ev_0092",
+    "caseId": "VND-013",
+    "vendor": "Vendor 13",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-07-29T10:02:29.891169Z"
+  },
+  {
+    "id": "ev_0001",
+    "caseId": "VND-001",
+    "vendor": "Vendor 01",
+    "activity": "Submit vendor request",
+    "team": "Requester",
+    "actor": "Luis Ortega",
+    "tool": "Jira",
+    "timestamp": "2026-07-02T20:51:37.190190Z"
+  },
+  {
+    "id": "ev_0135",
+    "caseId": "VND-019",
+    "vendor": "Vendor 19",
+    "activity": "Notify requester",
+    "team": "Procurement",
+    "actor": "Jin Park",
+    "tool": "Slack",
+    "timestamp": "2026-07-30T15:33:52.167480-07:00"
+  },
+  {
+    "id": "ev_0296",
+    "caseId": "VND-041",
+    "vendor": "Vendor 41",
+    "activity": "Create vendor in ERP",
+    "team": "Finance",
+    "actor": "Omar Haddad",
+    "tool": "NetSuite",
+    "timestamp": "2026-09-02T22:27:15.540786Z"
+  },
+  {
+    "id": "ev_0288",
+    "caseId": "VND-040",
+    "vendor": "Vendor 40",
+    "activity": "Contract review",
+    "team": "Legal",
+    "actor": "Rachel Green",
+    "tool": "Ironclad",
+    "timestamp": "2026-09-03T19:49:55.470800Z"
+  },
+  {
+    "id": "ev_0069",
+    "caseId": "VND-010",
+    "vendor": "Vendor 10",
+    "activity": "Security review",
+    "team": "Security",
+    "actor": "Ana Silva",
+    "tool": "Vanta",
+    "timestamp": "2026-07-27T05:32:56.231081Z"
+  }
+]
