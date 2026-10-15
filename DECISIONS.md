@@ -42,3 +42,9 @@ Options: modal · inline expansion · reference's right evidence panel.
 Why: follow a1 with a 520px desktop panel, independently scrolling evidence table and visible advice card. The composer stays under findings. Narrow screens show the evidence panel in place of the list; close returns focus to the selected finding. URL selection survives reload without storing process data in a new database.
 Cost: a small workspace component coordinates selection; the shared activity map moves out of the server-only module. Generic starter prompts are hidden on this process home so they do not crowd evidence or imply grounded follow-up support before slice 3.
 Switch if: a future multi-process workspace needs persistent investigation state beyond URL selection.
+
+## D8: Three process-specific starter questions; message limit 200/hour
+Options: keep starter prompts hidden (D5) · show the template's generic prompts · show three questions the tools can answer; keep the 10 messages/hour template limit · raise it.
+Why: Chao asked for starters above the input. The three questions map to the findings tools (no recorded security review, Vendor 11 timeline, contract before security), so each returns a card, not a guess. They stay as a single row of chips so they do not crowd the findings. The 10/hour limit blocked Chao's own walk-through and test runs.
+Cost: three fixed questions, not generated from the data. The higher limit also removes the template's guard against runaway use.
+Switch if: findings change (update the questions); a public deployment needs a real rate limit.

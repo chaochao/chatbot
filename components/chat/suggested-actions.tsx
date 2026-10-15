@@ -5,22 +5,16 @@ import { motion } from "framer-motion";
 import { memo, useCallback } from "react";
 import { suggestions } from "@/lib/constants";
 import type { ChatMessage } from "@/lib/types";
-import { cn } from "@/lib/utils";
 import { Suggestion } from "../ai-elements/suggestion";
 import type { VisibilityType } from "./visibility-selector";
 
 type SuggestedActionsProps = {
   chatId: string;
-  compact?: boolean;
   sendMessage: UseChatHelpers<ChatMessage>["sendMessage"];
   selectedVisibilityType: VisibilityType;
 };
 
-function PureSuggestedActions({
-  chatId,
-  compact,
-  sendMessage,
-}: SuggestedActionsProps) {
+function PureSuggestedActions({ chatId, sendMessage }: SuggestedActionsProps) {
   const suggestedActions = suggestions;
   const handleSuggestionClick = useCallback(
     (suggestion: string) => {
@@ -39,10 +33,7 @@ function PureSuggestedActions({
 
   return (
     <div
-      className={cn(
-        "flex w-full gap-2.5 overflow-x-auto pb-1",
-        !compact && "sm:grid sm:grid-cols-2 sm:overflow-visible"
-      )}
+      className="flex w-full gap-2 overflow-x-auto pb-1"
       data-testid="suggested-actions"
       style={{
         msOverflowStyle: "none",
@@ -53,10 +44,7 @@ function PureSuggestedActions({
       {suggestedActions.map((suggestedAction, index) => (
         <motion.div
           animate={{ opacity: 1, y: 0 }}
-          className={cn(
-            "min-w-[200px] shrink-0",
-            !compact && "sm:min-w-0 sm:shrink"
-          )}
+          className="shrink-0"
           exit={{ opacity: 0, y: 16 }}
           initial={{ opacity: 0, y: 16 }}
           key={suggestedAction}
@@ -67,10 +55,7 @@ function PureSuggestedActions({
           }}
         >
           <Suggestion
-            className={cn(
-              "h-auto w-full whitespace-nowrap rounded-xl border border-border/50 bg-card/30 px-4 py-3 text-left text-[12px] text-muted-foreground leading-relaxed transition-all duration-200 hover:-translate-y-0.5 hover:bg-card/60 hover:text-foreground hover:shadow-[var(--shadow-card)]",
-              !compact && "sm:whitespace-normal sm:p-4 sm:text-[13px]"
-            )}
+            className="h-auto whitespace-nowrap rounded-full border border-border/50 bg-card/30 px-3.5 py-2 text-left text-[12px] text-muted-foreground transition-colors duration-200 hover:bg-card/60 hover:text-foreground motion-reduce:transition-none"
             onClick={handleSuggestionClick}
             suggestion={suggestedAction}
           >

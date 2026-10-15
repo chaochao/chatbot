@@ -78,7 +78,6 @@ function PureMultimodalInput({
   stop,
   attachments,
   setAttachments,
-  messages,
   setMessages,
   sendMessage,
   className,
@@ -478,7 +477,6 @@ function PureMultimodalInput({
         uploadQueue.length === 0 && (
           <SuggestedActions
             chatId={chatId}
-            compact={messages.length > 0}
             selectedVisibilityType={selectedVisibilityType}
             sendMessage={sendMessage}
           />

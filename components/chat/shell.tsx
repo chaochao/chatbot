@@ -117,7 +117,6 @@ export function ChatShell() {
           attachments={attachments}
           chatId={chatId}
           editingMessage={editingMessage}
-          hideSuggestions
           input={input}
           isLoading={isLoading}
           messages={messages}

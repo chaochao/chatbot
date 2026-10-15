@@ -13,8 +13,7 @@ export const guestRegex = /^guest-\d+$/;
 export const DUMMY_PASSWORD = generateDummyPassword();
 
 export const suggestions = [
-  "Which vendors had contract review before security?",
-  "What happened with Vendor 11?",
   "Which vendors have no recorded security review?",
-  "Which steps appear that are not in the SOP?",
+  "What happened with Vendor 11?",
+  "Which had contract review before security?",
 ];
