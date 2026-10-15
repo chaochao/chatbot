@@ -23,6 +23,7 @@ Options: A findings home + panel · B chat-native cards · C process map.
 Why: brief requires findings before typing and usable when AI fails → core flow must not depend on the model. Data has clear, countable deviations (8/60, 8/60, 12/60). Claude Design was slow; waiting costs build time.
 Cost: less "wow" than a process map; chat-native reuse comes later (slice 3).
 Switch if: interviewer asks to "see the flow" → add a 7-step SOP strip with deviation counts above the findings (no graph lib).
+Update 17:35: Claude Design returned 3 clickable layouts; 1a scored 15 vs 10 / 10 (`design/README.md`). Confirms D2.
 
 ## D3: Findings computed in code from the fixture, not by the model and not in Postgres
 Options: model reads events and finds issues · SQL over imported events · pure TS over `data/events.json`.
