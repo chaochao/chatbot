@@ -219,3 +219,20 @@ test("loading, empty and retry states keep the home usable", async ({
     })
   ).toBeVisible();
 });
+
+test("slow vendor shows where the time went", async ({ page }) => {
+  await page.goto("/");
+  await page
+    .getByRole("button", {
+      exact: true,
+      name: "Over the 10-business-day target",
+    })
+    .click();
+  const panel = page.getByRole("complementary", {
+    name: "Over the 10-business-day target",
+  });
+  await panel.getByRole("button", { name: /^Vendor 11/ }).click();
+  await expect(
+    panel.getByText(/Waited 11 days before Contract review/)
+  ).toBeVisible();
+});

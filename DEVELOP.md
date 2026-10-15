@@ -6,7 +6,7 @@ Single source of truth for progress. Any agent resuming work reads this first.
 **Build started at:** 16:39 (Wed Oct 14) — Phase 5 at 18:24, freeze at 19:24
 **Last checkpoint:** v0.2-evidence-panel
 **Now:** slice 2 merged (Claude Code verified after Codex hit its limit)
-**Next:** Phase 5 (from 18:24): (1) Vendor 11 gap marker, (2) stop chat repeating the vendor list under the card, (3) mobile hydration warning (BACKLOG), (4) full UX-CHECKLIST walk on the demo path, screenshots to docs/screens/. Slice 4 only if time remains. Freeze 19:24.
+**Next:** Phase 5: (1) done: Vendor 11 gap marker (fix/gap-marker), (2) stop chat repeating the vendor list under the card, (3) mobile hydration warning (BACKLOG), (4) full UX-CHECKLIST walk on the demo path, screenshots to docs/screens/. Slice 4 only if time remains. Freeze 19:24.
 
 ### Handoff → Codex: slice 2 spec (17:40)
 Reference: `design/reference/a1.png` (layout to match) and `design/reference/states.png` (loading / empty / error frames). Rebuild with repo components (shadcn + Tailwind tokens), don't paste design markup.
