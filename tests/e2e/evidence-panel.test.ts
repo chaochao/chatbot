@@ -237,7 +237,7 @@ test("slow vendor shows where the time went", async ({ page }) => {
   ).toBeVisible();
 });
 
-test("double-click on the open finding closes the panel", async ({ page }) => {
+test("clicking the open finding again closes the panel", async ({ page }) => {
   await page.goto("/");
   const card = page.getByRole("button", {
     exact: true,
@@ -246,9 +246,9 @@ test("double-click on the open finding closes the panel", async ({ page }) => {
   const panel = page.getByRole("complementary", {
     name: "No recorded security review",
   });
-  await card.dblclick();
+  await card.click();
   await expect(panel).toBeVisible();
-  await card.dblclick();
+  await card.click();
   await expect(panel).toBeHidden();
 });
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRightIcon, RotateCwIcon } from "lucide-react";
-import { type MouseEvent, useCallback, useRef } from "react";
+import { useCallback } from "react";
 import useSWR from "swr";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -135,25 +135,11 @@ function FindingCard({
   number: number;
   vendors: string[];
 }) {
+  // Clicking the open card again closes the panel.
   const handleClick = useCallback(
-    () => onSelect?.(finding),
-    [onSelect, finding]
+    () => (selected && onDeselect ? onDeselect() : onSelect?.(finding)),
+    [selected, onDeselect, onSelect, finding]
   );
-  // Double-click closes the panel, but only if the card was already open.
-  const wasSelected = useRef(false);
-  const handleMouseDown = useCallback(
-    (event: MouseEvent) => {
-      if (event.detail === 1) {
-        wasSelected.current = selected;
-      }
-    },
-    [selected]
-  );
-  const handleDoubleClick = useCallback(() => {
-    if (wasSelected.current) {
-      onDeselect?.();
-    }
-  }, [onDeselect]);
   return (
     <div
       className={cn(
@@ -178,8 +164,6 @@ function FindingCard({
             className="text-left font-medium text-foreground text-sm outline-none after:absolute after:inset-0 after:rounded-xl"
             id={`finding-${finding.kind}`}
             onClick={handleClick}
-            onDoubleClick={handleDoubleClick}
-            onMouseDown={handleMouseDown}
             type="button"
           >
             <span
