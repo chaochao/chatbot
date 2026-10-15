@@ -23,8 +23,11 @@ export function useMessages({
   useEffect(() => {
     if (status === "submitted") {
       setHasSentMessage(true);
+      // A new question always follows the conversation, even if the user had scrolled up.
+      reset();
+      requestAnimationFrame(() => scrollToBottom("smooth"));
     }
-  }, [status]);
+  }, [status, reset, scrollToBottom]);
 
   return {
     containerRef,
