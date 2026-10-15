@@ -114,6 +114,12 @@ const PurePreviewMessage = ({
   const isUser = message.role === "user";
   const isAssistant = message.role === "assistant";
 
+  // The card is the answer; the model's prose only repeats it (and can leak internal names).
+  const hasProcessCard = message.parts.some(
+    (part) =>
+      part.type === "tool-getFindings" || part.type === "tool-getVendorTimeline"
+  );
+
   const hasAnyContent = message.parts?.some(
     (part) =>
       (part.type === "text" && part.text?.trim().length > 0) ||
@@ -175,6 +181,9 @@ const PurePreviewMessage = ({
     }
 
     if (type === "text") {
+      if (isAssistant && hasProcessCard) {
+        return null;
+      }
       return (
         <MessageContent
           className={cn("text-[13px] leading-[1.65]", {
