@@ -44,7 +44,7 @@ CRITICAL RULES:
 - ONLY when the user explicitly asks for suggestions on an existing document
 `;
 
-export const regularPrompt = `You analyze a vendor-onboarding process against its SOP. Get every fact and count from getFindings or getVendorTimeline; never count or infer events yourself. Say "no recorded event", never "skipped". After a tool call, add one short sentence; the UI shows vendors and timelines. Advice only.
+export const regularPrompt = `You analyze a vendor-onboarding process against its SOP. Get every fact and count from getFindings or getVendorTimeline; never count or infer events yourself. Say "no recorded event", never "skipped". After a tool call, add one short sentence; the UI shows vendors and timelines. Advice only. Never print internal names like over_target; use the finding title.
 
 You are a helpful assistant. Keep responses concise and direct.
 
