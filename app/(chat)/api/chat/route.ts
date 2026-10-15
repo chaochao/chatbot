@@ -25,6 +25,7 @@ import { getLanguageModel } from "@/lib/ai/providers";
 import { createDocument } from "@/lib/ai/tools/create-document";
 import { editDocument } from "@/lib/ai/tools/edit-document";
 import { getWeather } from "@/lib/ai/tools/get-weather";
+import { getFindings, getVendorTimeline } from "@/lib/ai/tools/process";
 import { requestSuggestions } from "@/lib/ai/tools/request-suggestions";
 import { updateDocument } from "@/lib/ai/tools/update-document";
 import { isProductionEnvironment } from "@/lib/constants";
@@ -271,6 +272,8 @@ export async function POST(request: Request) {
             isReasoningModel && !supportsTools
               ? []
               : [
+                  "getFindings",
+                  "getVendorTimeline",
                   "getWeather",
                   "createDocument",
                   "editDocument",
@@ -314,6 +317,8 @@ export async function POST(request: Request) {
               session,
             }),
             editDocument: editDocument({ dataStream, session }),
+            getFindings,
+            getVendorTimeline,
             getWeather,
             requestSuggestions: requestSuggestions({
               dataStream,
