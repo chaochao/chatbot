@@ -11,10 +11,9 @@ Points from Chao. Apply to the kit files (`AGENTS.md`, `DESIGN-PROMPT.md`, `DEMO
 ## Claude Code's points (added after Chao's list)
 
 6. **Restart after config changes.** A raised message limit did not take effect until the dev server restarted, and Chao hit the limit again in the demo window. After any config or server-side constant change, kill and restart the dev server, then send one test message before saying it is fixed. (Saved to memory.)
-7. **No guards for the demo.** A template message limit (10 per hour) blocked a walk-through. At the start of Phase 0, check template rate limits and entitlements and switch them off for the demo; log a real limit as a next step in `BACKLOG.md`.
-8. **Check every scale or trust claim against the code before it goes in a deck prompt.** The deck prompt said "bounded responses"; the API returns the whole report. Verify each claim with one grep before writing it.
-9. **Walk the finished app in a real browser early, and again at the freeze.** Walking the app found a repeated quote in the SOP panel, model text repeating a card, and a scroll jump on close. Run the walk at about 60% and again before the freeze, not only once.
+7. **Check every scale or trust claim against the code before it goes in a deck prompt.** The deck prompt said "bounded responses"; the API returns the whole report. Verify each claim with one grep before writing it.
+8. **Walk the finished app in a real browser early, and again at the freeze.** Walking the app found a repeated quote in the SOP panel, model text repeating a card, and a scroll jump on close. Run the walk at about 60% and again before the freeze, not only once.
 
 ## Where applied
 
-Points 1 to 5: `AGENTS.md` Phase 2 step 6, `DESIGN-PROMPT.md` (top note), `DEMO.md` (Timing and checks). Points 6 to 9: this file only; move 7 into `AGENTS.md` Phase 0 if Chao agrees.
+Points 1 to 5: `AGENTS.md` Phase 2 step 6, `DESIGN-PROMPT.md` (top note), `DEMO.md` (Timing and checks). Points 6 to 8: this file only. No rate-limit rule (Chao: do not do that).
