@@ -55,7 +55,7 @@ export function EvidenceOverlay({ children }: { children: ReactNode }) {
     setSel(undefined);
     const el = trigger.current as HTMLElement | null;
     trigger.current = null;
-    requestAnimationFrame(() => el?.focus());
+    requestAnimationFrame(() => el?.focus({ preventScroll: true }));
   }, []);
   const selectVendor = useCallback(
     (caseId: string) => setSel((s) => s && { ...s, caseId }),

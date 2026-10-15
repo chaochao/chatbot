@@ -45,7 +45,7 @@ export function FindingsWorkspace({ footer }: { footer?: ReactNode }) {
     const trigger =
       triggerRef.current ?? document.getElementById(`finding-${finding?.kind}`);
     updateSelection();
-    requestAnimationFrame(() => trigger?.focus());
+    requestAnimationFrame(() => trigger?.focus({ preventScroll: true }));
   }, [finding?.kind]);
 
   useCloseOnOutsideClick(!!finding, closePanel);
