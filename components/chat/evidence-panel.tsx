@@ -262,6 +262,16 @@ function VendorChip({
   onSelect: (caseId: string) => void;
 }) {
   const select = useCallback(() => onSelect(caseId), [caseId, onSelect]);
+  const ref = useRef<HTMLButtonElement>(null);
+  // Center the selected chip in the horizontal list (vertical scroll untouched).
+  useEffect(() => {
+    const chip = ref.current;
+    const list = chip?.parentElement;
+    if (selected && chip && list) {
+      list.scrollLeft =
+        chip.offsetLeft - (list.clientWidth - chip.offsetWidth) / 2;
+    }
+  }, [selected]);
   return (
     <Button
       aria-pressed={selected}
@@ -270,6 +280,7 @@ function VendorChip({
         focusRing
       )}
       onClick={select}
+      ref={ref}
       variant={selected ? "default" : "outline"}
     >
       <span>{name}</span>
