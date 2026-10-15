@@ -23,7 +23,7 @@ Copy the row for each issue; remove the placeholder row when filling this file. 
 
 | Issue / area | Priority | Status | User impact and reproduction / evidence | Smallest fix | Estimate / dependency | Acceptance check |
 |---|---|---|---|---|---|---|
-| <short name / screen> | <P0–P3> | open | <user action → observed result; expected result; screenshot/log path> | <specific change> | <minutes; dependency or none> | <observable result, including recovery where relevant> |
+| Mobile artifact hydration warning | P2 | open | At 390px, initial server/client rendering differs for the existing hidden Artifact; React recovers and the evidence acceptance passes, but Next shows an issue badge. Screenshot: docs/screens/2-evidence-panel-mobile.png. Code: components/chat/artifact.tsx uses viewport width to return an empty div on desktop versus null on mobile. | Make the initial artifact viewport branch agree between server and client. | ~5 minutes; Phase 5 hardening | Reload `/` at 390px with no hydration error, then open evidence, switch vendor, and close successfully. |
 
 ## Explicit deferrals
 

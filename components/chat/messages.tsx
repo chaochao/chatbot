@@ -1,12 +1,12 @@
 import type { UseChatHelpers } from "@ai-sdk/react";
 import { ArrowDownIcon } from "lucide-react";
-import { useCallback, useEffect, useRef } from "react";
+import { type ReactNode, useCallback, useEffect, useRef } from "react";
 import { useMessages } from "@/hooks/use-messages";
 import type { Vote } from "@/lib/db/schema";
 import type { ChatMessage } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { useDataStream } from "./data-stream-provider";
-import { FindingsHome } from "./findings-home";
+import { FindingsWorkspace } from "./findings-workspace";
 import { PreviewMessage, ThinkingMessage } from "./message";
 
 type MessagesProps = {
@@ -22,6 +22,7 @@ type MessagesProps = {
   isLoading?: boolean;
   selectedModelId: string;
   onEditMessage?: (message: ChatMessage) => void;
+  emptyStateFooter?: ReactNode;
 };
 
 function PureMessages({
@@ -37,6 +38,7 @@ function PureMessages({
   isLoading,
   selectedModelId: _selectedModelId,
   onEditMessage,
+  emptyStateFooter,
 }: MessagesProps) {
   const {
     containerRef: messagesContainerRef,
@@ -66,10 +68,8 @@ function PureMessages({
   return (
     <div className="relative flex-1 bg-background">
       {messages.length === 0 && !isLoading && (
-        <div className="absolute inset-0 z-10 overflow-y-auto">
-          <div className="mx-auto max-w-3xl px-4 pt-10 pb-6 md:pt-16">
-            <FindingsHome />
-          </div>
+        <div className="absolute inset-0 z-10">
+          <FindingsWorkspace footer={emptyStateFooter} />
         </div>
       )}
       <div

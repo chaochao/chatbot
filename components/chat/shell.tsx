@@ -110,6 +110,32 @@ export function ChatShell() {
     window.location.href = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/`;
   }, []);
 
+  const composer = (
+    <div className="shrink-0 mx-auto flex w-full max-w-4xl gap-2 border-t-0 bg-background px-2 pb-3 md:px-4 md:pb-4">
+      {!isReadonly && (
+        <MultimodalInput
+          attachments={attachments}
+          chatId={chatId}
+          editingMessage={editingMessage}
+          hideSuggestions
+          input={input}
+          isLoading={isLoading}
+          messages={messages}
+          onCancelEdit={handleCancelEdit}
+          onModelChange={setCurrentModelId}
+          selectedModelId={currentModelId}
+          selectedVisibilityType={visibilityType}
+          sendMessage={editingMessage ? handleSendEditedMessage : sendMessage}
+          setAttachments={setAttachments}
+          setInput={setInput}
+          setMessages={setMessages}
+          status={status}
+          stop={stop}
+        />
+      )}
+    </div>
+  );
+
   return (
     <>
       <div className="flex h-dvh w-full flex-row overflow-hidden">
@@ -129,6 +155,7 @@ export function ChatShell() {
             <Messages
               addToolApprovalResponse={addToolApprovalResponse}
               chatId={chatId}
+              emptyStateFooter={composer}
               isArtifactVisible={isArtifactVisible}
               isLoading={isLoading}
               isReadonly={isReadonly}
@@ -141,30 +168,7 @@ export function ChatShell() {
               votes={votes}
             />
 
-            <div className="sticky bottom-0 z-1 mx-auto flex w-full max-w-4xl gap-2 border-t-0 bg-background px-2 pb-3 md:px-4 md:pb-4">
-              {!isReadonly && (
-                <MultimodalInput
-                  attachments={attachments}
-                  chatId={chatId}
-                  editingMessage={editingMessage}
-                  input={input}
-                  isLoading={isLoading}
-                  messages={messages}
-                  onCancelEdit={handleCancelEdit}
-                  onModelChange={setCurrentModelId}
-                  selectedModelId={currentModelId}
-                  selectedVisibilityType={visibilityType}
-                  sendMessage={
-                    editingMessage ? handleSendEditedMessage : sendMessage
-                  }
-                  setAttachments={setAttachments}
-                  setInput={setInput}
-                  setMessages={setMessages}
-                  status={status}
-                  stop={stop}
-                />
-              )}
-            </div>
+            {(messages.length > 0 || isLoading) && composer}
           </div>
         </div>
 
