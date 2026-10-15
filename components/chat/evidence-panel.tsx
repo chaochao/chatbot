@@ -70,14 +70,6 @@ export function EvidencePanel({
     closeRef.current?.focus({ preventScroll: true });
   }, []);
 
-  // Bring the first evidence event into view when the vendor changes.
-  useEffect(() => {
-    const [first] = finding.evidence[caseId] ?? [];
-    document
-      .getElementById(`event-${first}`)
-      ?.scrollIntoView({ behavior: "auto", block: "center" });
-  }, [caseId, finding]);
-
   return (
     <aside
       aria-labelledby="evidence-title"
