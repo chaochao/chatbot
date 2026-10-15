@@ -453,7 +453,7 @@ function NextStepCard({
             SOP step {finding.sopStep}
           </a>
         ) : (
-          <span className="inline-flex items-center rounded-md border border-border bg-card px-2 py-1 text-xs">
+          <span className="inline-flex items-center rounded-full bg-muted px-2.5 py-1 text-muted-foreground text-xs">
             SOP v3 ·{" "}
             {finding.kind === "over_target"
               ? "10-business-day target"
