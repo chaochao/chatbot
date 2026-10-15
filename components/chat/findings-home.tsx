@@ -29,9 +29,11 @@ export function useProcessReport() {
 export function FindingsHome({
   selectedKind,
   onSelect,
+  hideHeading = false,
 }: {
   selectedKind?: Finding["kind"] | null;
   onSelect?: (finding: Finding) => void;
+  hideHeading?: boolean;
 }) {
   const { data, error, isLoading, mutate } = useProcessReport();
   const retry = useCallback(() => mutate(), [mutate]);
@@ -65,17 +67,11 @@ export function FindingsHome({
   }
 
   return (
-    <section aria-labelledby="findings-headline" className="flex flex-col">
-      <p className="text-muted-foreground text-xs">
-        Vendor onboarding · {data.totalCases} vendors · compared with{" "}
-        {data.sopTitle}
+    <section aria-label="Ranked findings" className="flex flex-col">
+      {!hideHeading && <FindingsHeading report={data} />}
+      <p className="mt-4 text-muted-foreground text-xs">
+        Ranked findings · select one to inspect the evidence
       </p>
-      <h1
-        className="mt-1.5 text-balance font-semibold text-foreground text-xl tracking-tight md:text-2xl"
-        id="findings-headline"
-      >
-        {data.headline}
-      </h1>
 
       {data.findings.length === 0 ? (
         <p className="mt-6 rounded-xl border border-border/60 border-dashed p-6 text-muted-foreground text-sm">
@@ -83,15 +79,17 @@ export function FindingsHome({
           below to explore the records.
         </p>
       ) : (
-        <ol className="mt-5 flex flex-col gap-2.5">
-          {data.findings.map((finding) => (
+        <ol className="mt-3 flex flex-col gap-2.5">
+          {data.findings.map((finding, index) => (
             <li key={finding.kind}>
               <FindingCard
                 finding={finding}
+                number={index + 1}
                 onSelect={onSelect}
                 selected={selectedKind === finding.kind}
                 sopRule={data.sop.find((st) => st.number === finding.sopStep)}
                 totalCases={data.totalCases}
+                vendors={finding.caseIds.map((id) => data.cases[id][0].vendor)}
               />
             </li>
           ))}
@@ -101,52 +99,85 @@ export function FindingsHome({
   );
 }
 
+export function FindingsHeading({ report }: { report: ProcessReport }) {
+  return (
+    <header>
+      <h1 className="text-balance font-semibold text-foreground text-xl tracking-tight md:text-2xl">
+        {report.headline}
+      </h1>
+      <p className="mt-2 text-muted-foreground text-xs leading-relaxed">
+        Vendor onboarding · {report.totalCases} vendors · compared with{" "}
+        {report.sopTitle}
+      </p>
+    </header>
+  );
+}
+
 function FindingCard({
   finding,
   selected,
   sopRule,
   totalCases,
   onSelect,
+  number,
+  vendors,
 }: {
   finding: Finding;
   selected: boolean;
   sopRule?: SopStep;
   totalCases: number;
   onSelect?: (finding: Finding) => void;
+  number: number;
+  vendors: string[];
 }) {
   const handleClick = useCallback(
     () => onSelect?.(finding),
     [onSelect, finding]
   );
   return (
-    <button
-      aria-pressed={selected}
+    <div
       className={cn(
-        "group flex w-full items-start gap-3 rounded-xl border border-border/60 bg-card px-4 py-3.5 text-left transition-[border-color,background-color,box-shadow] duration-200",
-        "hover:border-border hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring motion-reduce:transition-none",
-        selected && "border-amber-500/60 bg-amber-500/5"
+        "group relative flex w-full items-start gap-3 rounded-xl border border-border/60 bg-card px-4 py-4 text-left transition-[border-color,background-color,box-shadow] duration-200",
+        "focus-within:ring-2 focus-within:ring-ring motion-reduce:transition-none",
+        selected
+          ? "border-amber-500/60 bg-amber-500/5 hover:bg-amber-500/10"
+          : "hover:border-border hover:bg-muted/40"
       )}
-      onClick={handleClick}
-      type="button"
     >
       <span
         aria-hidden
-        className={cn(
-          "mt-1.5 size-2 shrink-0 rounded-full",
-          SEVERITY_DOT[finding.severity]
-        )}
-      />
+        className="mt-0.5 text-xs text-muted-foreground tabular-nums"
+      >
+        {number}
+      </span>
       <span className="min-w-0 flex-1">
         <span className="flex flex-wrap items-baseline justify-between gap-x-3">
-          <span className="font-medium text-foreground text-sm">
+          <button
+            aria-controls={selected ? "evidence-panel" : undefined}
+            aria-expanded={selected}
+            className="text-left font-medium text-foreground text-sm outline-none after:absolute after:inset-0 after:rounded-xl"
+            id={`finding-${finding.kind}`}
+            onClick={handleClick}
+            type="button"
+          >
+            <span
+              aria-hidden
+              className={cn(
+                "mr-2 inline-block size-2 rounded-full",
+                SEVERITY_DOT[finding.severity]
+              )}
+            />
             {finding.title}
-          </span>
+          </button>
           <span className="text-muted-foreground text-xs tabular-nums">
             <span className="sr-only">
               {SEVERITY_LABEL[finding.severity]} priority.{" "}
             </span>
             {finding.caseIds.length} of {totalCases} vendors
           </span>
+        </span>
+        <span className="mt-2 block text-xs text-muted-foreground">
+          {vendors.join(", ")}
         </span>
         <span className="mt-1 block text-muted-foreground text-xs leading-relaxed">
           {sopRule
@@ -158,6 +189,6 @@ function FindingCard({
         aria-hidden
         className="mt-1 size-4 shrink-0 text-muted-foreground/50 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-foreground motion-reduce:transition-none"
       />
-    </button>
+    </div>
   );
 }

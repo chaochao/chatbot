@@ -88,6 +88,7 @@ function PureMultimodalInput({
   editingMessage,
   onCancelEdit,
   isLoading,
+  hideSuggestions = false,
 }: {
   chatId: string;
   input: string;
@@ -108,6 +109,7 @@ function PureMultimodalInput({
   editingMessage?: ChatMessage | null;
   onCancelEdit?: () => void;
   isLoading?: boolean;
+  hideSuggestions?: boolean;
 }) {
   const router = useRouter();
   const { setTheme, resolvedTheme } = useTheme();
@@ -471,6 +473,7 @@ function PureMultimodalInput({
 
       {!editingMessage &&
         !isLoading &&
+        !hideSuggestions &&
         messages.length === 0 &&
         attachments.length === 0 &&
         uploadQueue.length === 0 && (
@@ -602,6 +605,9 @@ export const MultimodalInput = memo(
       return false;
     }
     if (prevProps.isLoading !== nextProps.isLoading) {
+      return false;
+    }
+    if (prevProps.hideSuggestions !== nextProps.hideSuggestions) {
       return false;
     }
     if (prevProps.messages.length !== nextProps.messages.length) {

@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import events from "@/data/events.json";
+import { ACTIVITY_TO_STEP } from "./steps";
 
 export type ProcessEvent = {
   id: string;
@@ -44,17 +45,6 @@ export type ProcessReport = {
   headline: string;
   findings: Finding[];
   cases: Record<string, ProcessEvent[]>;
-};
-
-// Observed activity name → SOP step number. "Request more info" has no step.
-export const ACTIVITY_TO_STEP: Record<string, number> = {
-  "Contract review": 5,
-  "Create vendor in ERP": 6,
-  "Notify requester": 7,
-  "Procurement review": 2,
-  "Security questionnaire sent": 3,
-  "Security review": 4,
-  "Submit vendor request": 1,
 };
 
 const TARGET_BUSINESS_DAYS = 10;

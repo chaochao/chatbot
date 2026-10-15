@@ -4,9 +4,9 @@ Single source of truth for progress. Any agent resuming work reads this first.
 
 **Phase:** 4 · Slice loop (forked repo: no scaffold)
 **Build started at:** 16:39 (Wed Oct 14) — Phase 5 at 18:24, freeze at 19:24
-**Last checkpoint:** v0.1-findings-home
-**Now:** handoff to Codex for slice 2 (feat/evidence-panel)
-**Next:** slice 2 evidence panel on branch `feat/evidence-panel` (already created from main @ v0.1-findings-home). Handoff spec below.
+**Last checkpoint:** v0.2-evidence-panel
+**Now:** slice 2 merged (Claude Code verified after Codex hit its limit)
+**Next:** Chao reviews slice 2 at `/`. After confirmation, plan slice 3 grounded follow-up chat. Protect Phase 5 at 18:24; no automatic next-slice start. Codex usage values remain pending from `/status`.
 
 ### Handoff → Codex: slice 2 spec (17:40)
 Reference: `design/reference/a1.png` (layout to match) and `design/reference/states.png` (loading / empty / error frames). Rebuild with repo components (shadcn + Tailwind tokens), don't paste design markup.
@@ -30,7 +30,7 @@ Reference: `design/reference/a1.png` (layout to match) and `design/reference/sta
 ## Slices
 _(direction A: findings home + evidence panel. Interaction-first, fixture data from `data/`, no new DB tables.)_
 - [x] 1. Findings home — `lib/process/findings.ts` (pure, + test) computes ranked findings; empty chat home shows headline + finding cards instead of "What can I help with?". — acceptance: open `/`, see "No recorded security review · 8 of 60 vendors" as the first card, before typing.
-- [ ] 2. Evidence panel + next step — click a card → right panel: affected vendor chips, timeline beside the exact SOP rule, deviating event highlighted, dashed "No recorded event" rows, next-step card (Copy / Dismiss, "advice only"). — acceptance: click finding 1 → Vendor 07 shows dashed "No recorded event" for Security review; click Vendor 19 chip → its timeline loads; Esc closes.
+- [x] 2. Evidence panel + next step — click a card → right panel: affected vendor chips, timeline beside the exact SOP rule, deviating event highlighted, dashed "No recorded event" rows, next-step card (Copy / Dismiss, "advice only"). — acceptance: click finding 1 → Vendor 07 shows dashed "No recorded event" for Security review; click Vendor 19 chip → its timeline loads; Esc closes.
 - [ ] 3. Grounded follow-up chat — model gets findings + SOP as tool output (`getFindings`, `getVendorTimeline`); tool parts render with the same card / timeline components (view registry in `message.tsx`); vendor chips in answers open the panel. — acceptance: ask "Which vendors had contract review before security?" → answer lists vendors as clickable chips that open the evidence panel.
 - [ ] 4. (if time) AI failure path — findings stay usable when the model errors; answer shows "Try again". — acceptance: wrong API key → findings and panel still work, chat shows retry.
 
@@ -45,13 +45,16 @@ _(direction A: findings home + evidence panel. Interaction-first, fixture data f
 |---|---|---|---|
 
 ## Usage
-_(Claude Code tokens/cost; run `node usage.mjs "<label>"` at each phase gate and paste the row. Cost is an estimate at list price.)_
+_(usage.mjs measures Claude Code only. Codex `/status` must be run in the user interface; no agent-accessible status tool exists here. Requested values at the slice gate; do not infer Codex usage from Claude usage.)_
 | Time | Gate | Msgs | In | Out | Cache write | Cache read | Cost |
 |---|---|---|---|---|---|---|---|
 | 16:40 | Phase 0 start | 6 | 0.0k | 3.2k | 36.3k | 305.9k | ~$0.60 |
 | 16:41 | Phase 0 end | 13 | 0.0k | 6.8k | 46.9k | 751.9k | ~$1.02 |
 | 16:55 | App running | 38 | 0.1k | 17.9k | 68.2k | 2824.5k | ~$2.54 |
 | 17:30 | Slice 1 done | 80 | 0.2k | 54.2k | 250.2k | 7746.2k | ~$7.73 |
+| 17:40 | Claude Code handoff (Chao-reported) | — | — | — | — | — | ~$8.51 |
+| 17:43 | Codex slice 2 start | pending /status | — | — | — | — | unavailable |
+| 17:53 | Codex slice 2 checks | pending /status | — | — | — | — | unavailable |
 
 ## Interviewer questions
 _(timestamped: anything the interviewer asked or remarked on; each gets an answer in PRESENTATION.md Q&A)_
@@ -69,3 +72,8 @@ _(timestamped: what happened, what broke, what an agent got wrong and how it was
 - 17:10 Data check: 8/60 no recorded security review, 8/60 contract before security, 12 "Request more info" (not in SOP), median 6.5 d, max 14.5 d (VND-011). Quirks: duplicate events (VND-006 contract review ×2), actor alias "J. Park" vs "Jin Park", null actor on requester events.
 - 17:10 Filled DESIGN-PROMPT.md Prompt 1 with A/B/C (findings home / chat-native / process map) for Claude Design.
 - 16:40 Added `usage.mjs` (token/cost per phase gate, Chao's request).
+
+- 17:53 Slice 2: acceptance verified in local Chrome (Playwright): click No recorded security review → Vendor 07, step 4 No recorded event → Vendor 19 real timeline → Esc closes and returns focus. Four E2E tests also cover selection reload, Enter, Copy, Dismiss/Undo, duplicate Vendor 06 events, all vendor chips, non-SOP rows, mobile/reduced motion, and loading/empty/error retry. `npx tsc --noEmit`, Biome on nine changed TS/TSX files, and `corepack pnpm test:unit` (3 tests) passed.
+- 17:53 UX walk: real source dates, no visible case/event IDs, amber evidence labels, focus rings, 200ms entrance/reduced motion, sources link to evidence rows, advice remains visible beside a scrolling table on desktop. Narrow screens replace the list with the panel. Screenshot review corrected composer placement; screenshots saved under docs/screens/2-evidence-panel*.png. Existing mobile artifact hydration warning remains in BACKLOG.md for Phase 5.
+- 18:00 Codex hit usage limit before committing (its log claimed a v0.2 tag that did not exist). Claude Code re-ran checks (tsc, biome, 3 unit tests) and the acceptance path in Chrome: pass. Committed + merged + tagged v0.2-evidence-panel. Phase 5 fix: at 800px height the evidence table shows ~2 rows; auto-scroll to the first highlighted row. Not done: Vendor 11 gap marker (Chao's 17:45 ask) → do in Phase 5.
+- 17:53 Verification setup: `/health` redirects (no dedicated route); `/ping` returns pong. Existing dev server reused. In-app browser runtime reported no browsers, so used installed Chrome through repository Playwright. Temporary config `/tmp/evidence-playwright.config.ts` selects the evidence tests and Chrome; no new dependencies. Unit tests needed sandbox permission for the tsx IPC socket.

@@ -30,3 +30,15 @@ Options: model reads events and finds issues · SQL over imported events · pure
 Why: deterministic, testable, fast; the model only explains and answers follow-ups with these facts as tool output. 419 events fit in memory.
 Cost: no live data; re-read per request.
 Switch if: events > ~10k or live ingestion → Postgres table, indexes on (caseId, timestamp), keyset pagination.
+
+## D4: Amber evidence, real records, advice only
+Options: red violation styling · amber possible-gap styling; illustrative design data · supplied event records.
+Why: Chao approved amber for slice 2. Missing events do not prove a review was missed, and review events do not confirm approval. Every affected vendor is selectable; duplicate records remain visible. Dates use UTC to avoid shifting events across days. The SOP column names only tools stated in the SOP; observed tools appear separately.
+Cost: more careful wording and a horizontally scrolling vendor list. Copy and Dismiss/Undo operate locally; suggestions send nothing.
+Switch if: verified approvals or human-reviewed findings justify a stronger status.
+
+## D5: Evidence beside findings, with selection in the URL
+Options: modal · inline expansion · reference's right evidence panel.
+Why: follow a1 with a 520px desktop panel, independently scrolling evidence table and visible advice card. The composer stays under findings. Narrow screens show the evidence panel in place of the list; close returns focus to the selected finding. URL selection survives reload without storing process data in a new database.
+Cost: a small workspace component coordinates selection; the shared activity map moves out of the server-only module. Generic starter prompts are hidden on this process home so they do not crowd evidence or imply grounded follow-up support before slice 3.
+Switch if: a future multi-process workspace needs persistent investigation state beyond URL selection.
