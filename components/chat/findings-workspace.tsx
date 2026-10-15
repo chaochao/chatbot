@@ -94,6 +94,7 @@ export function FindingsWorkspace({ footer }: { footer?: ReactNode }) {
             <div className={cn("mx-auto", !finding && "max-w-3xl")}>
               <FindingsHome
                 hideHeading
+                onDeselect={closePanel}
                 onSelect={selectFinding}
                 selectedKind={finding?.kind}
               />

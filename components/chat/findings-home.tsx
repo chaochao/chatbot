@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRightIcon, RotateCwIcon } from "lucide-react";
-import { useCallback } from "react";
+import { type MouseEvent, useCallback, useRef } from "react";
 import useSWR from "swr";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -29,10 +29,12 @@ export function useProcessReport() {
 export function FindingsHome({
   selectedKind,
   onSelect,
+  onDeselect,
   hideHeading = false,
 }: {
   selectedKind?: Finding["kind"] | null;
   onSelect?: (finding: Finding) => void;
+  onDeselect?: () => void;
   hideHeading?: boolean;
 }) {
   const { data, error, isLoading, mutate } = useProcessReport();
@@ -85,6 +87,7 @@ export function FindingsHome({
               <FindingCard
                 finding={finding}
                 number={index + 1}
+                onDeselect={onDeselect}
                 onSelect={onSelect}
                 selected={selectedKind === finding.kind}
                 sopRule={data.sop.find((st) => st.number === finding.sopStep)}
@@ -119,6 +122,7 @@ function FindingCard({
   sopRule,
   totalCases,
   onSelect,
+  onDeselect,
   number,
   vendors,
 }: {
@@ -127,6 +131,7 @@ function FindingCard({
   sopRule?: SopStep;
   totalCases: number;
   onSelect?: (finding: Finding) => void;
+  onDeselect?: () => void;
   number: number;
   vendors: string[];
 }) {
@@ -134,6 +139,21 @@ function FindingCard({
     () => onSelect?.(finding),
     [onSelect, finding]
   );
+  // Double-click closes the panel, but only if the card was already open.
+  const wasSelected = useRef(false);
+  const handleMouseDown = useCallback(
+    (event: MouseEvent) => {
+      if (event.detail === 1) {
+        wasSelected.current = selected;
+      }
+    },
+    [selected]
+  );
+  const handleDoubleClick = useCallback(() => {
+    if (wasSelected.current) {
+      onDeselect?.();
+    }
+  }, [onDeselect]);
   return (
     <div
       className={cn(
@@ -158,6 +178,8 @@ function FindingCard({
             className="text-left font-medium text-foreground text-sm outline-none after:absolute after:inset-0 after:rounded-xl"
             id={`finding-${finding.kind}`}
             onClick={handleClick}
+            onDoubleClick={handleDoubleClick}
+            onMouseDown={handleMouseDown}
             type="button"
           >
             <span

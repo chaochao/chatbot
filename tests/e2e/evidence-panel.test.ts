@@ -236,3 +236,18 @@ test("slow vendor shows where the time went", async ({ page }) => {
     panel.getByText(/Waited 11 days before Contract review/)
   ).toBeVisible();
 });
+
+test("double-click on the open finding closes the panel", async ({ page }) => {
+  await page.goto("/");
+  const card = page.getByRole("button", {
+    exact: true,
+    name: "No recorded security review",
+  });
+  const panel = page.getByRole("complementary", {
+    name: "No recorded security review",
+  });
+  await card.dblclick();
+  await expect(panel).toBeVisible();
+  await card.dblclick();
+  await expect(panel).toBeHidden();
+});

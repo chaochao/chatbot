@@ -18,16 +18,25 @@ type Open = (kind: Finding["kind"], caseId: string) => void;
 const OpenEvidence = createContext<Open | null>(null);
 export const useOpenEvidence = () => useContext(OpenEvidence);
 
+const Selection = createContext<{ kind?: Finding["kind"]; close: () => void }>({
+  close: () => undefined,
+});
+
 // Findings stay at the top of the conversation and open the same panel.
 export function FindingsTop() {
   const open = useOpenEvidence();
+  const { kind, close } = useContext(Selection);
   const onSelect = useCallback(
     (finding: Finding) => open?.(finding.kind, finding.caseIds[0]),
     [open]
   );
   return (
     <div className="border-border/60 border-b pb-6">
-      <FindingsHome onSelect={onSelect} />
+      <FindingsHome
+        onDeselect={close}
+        onSelect={onSelect}
+        selectedKind={kind}
+      />
     </div>
   );
 }
@@ -65,22 +74,24 @@ export function EvidenceOverlay({ children }: { children: ReactNode }) {
   const finding = data?.findings.find((f) => f.kind === sel?.kind);
   return (
     <OpenEvidence.Provider value={open}>
-      <div className="relative flex min-h-0 flex-1 flex-col">
-        {children}
-        {!!sel && !!data && !!finding && (
-          <div className="absolute inset-y-0 right-0 z-20 flex w-full flex-col shadow-[var(--shadow-float)] md:w-[520px]">
-            <EvidencePanel
-              caseId={sel.caseId}
-              finding={finding}
-              findingNumber={data.findings.indexOf(finding) + 1}
-              key={finding.kind}
-              onClose={close}
-              onSelectVendor={selectVendor}
-              report={data}
-            />
-          </div>
-        )}
-      </div>
+      <Selection.Provider value={{ close, kind: sel?.kind }}>
+        <div className="relative flex min-h-0 flex-1 flex-col">
+          {children}
+          {!!sel && !!data && !!finding && (
+            <div className="absolute inset-y-0 right-0 z-20 flex w-full flex-col shadow-[var(--shadow-float)] md:w-[520px]">
+              <EvidencePanel
+                caseId={sel.caseId}
+                finding={finding}
+                findingNumber={data.findings.indexOf(finding) + 1}
+                key={finding.kind}
+                onClose={close}
+                onSelectVendor={selectVendor}
+                report={data}
+              />
+            </div>
+          )}
+        </div>
+      </Selection.Provider>
     </OpenEvidence.Provider>
   );
 }
