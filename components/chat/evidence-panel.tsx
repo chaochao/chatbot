@@ -43,6 +43,9 @@ export function formatDate(timestamp: string) {
   }).format(new Date(timestamp));
 }
 
+const GAP_DAYS = 3;
+const DAY_MS = 86_400_000;
+
 export function EvidencePanel({
   finding,
   findingNumber,
@@ -65,6 +68,17 @@ export function EvidencePanel({
   const extraEvents = events.filter(
     (event) => !ACTIVITY_TO_STEP[event.activity]
   );
+  const gaps = new Map<number, { days: number; next: string }>();
+  for (let i = 1; i < events.length; i += 1) {
+    const step = ACTIVITY_TO_STEP[events[i - 1].activity];
+    const days = Math.round(
+      (Date.parse(events[i].timestamp) - Date.parse(events[i - 1].timestamp)) /
+        DAY_MS
+    );
+    if (step && days >= GAP_DAYS) {
+      gaps.set(step, { days, next: events[i].activity });
+    }
+  }
 
   useEffect(() => {
     closeRef.current?.focus({ preventScroll: true });
@@ -137,6 +151,7 @@ export function EvidencePanel({
           </thead>
           <tbody>
             {report.sop.map((step) => {
+              const gap = gaps.get(step.number);
               const observed = events.filter(
                 (event) => ACTIVITY_TO_STEP[event.activity] === step.number
               );
@@ -217,6 +232,19 @@ export function EvidencePanel({
                             showActivity
                           />
                         ))}
+                      </td>
+                    </tr>
+                  )}
+                  {gap && (
+                    <tr aria-label={`Waited ${gap.days} days`}>
+                      <td
+                        className={cn(
+                          "border-t border-dashed border-border bg-muted/40 px-3 py-2 text-center",
+                          accentText
+                        )}
+                        colSpan={2}
+                      >
+                        Waited {gap.days} days before {gap.next}
                       </td>
                     </tr>
                   )}
