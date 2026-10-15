@@ -43,3 +43,10 @@ Move an item to **verified** only after its acceptance check passes. Keep the or
 
 At each slice gate: run [UX-CHECKLIST.md](UX-CHECKLIST.md), add new findings, update statuses, and put the next chosen item in `DEVELOP.md`. At handoff or freeze: make sure unfinished work is still visible here and the biggest gap appears in [DEMO.md](DEMO.md) and `PRESENTATION.md`.
 
+
+## Next: protect company data (security; deliberately not done for the demo)
+
+Today anyone who opens the app, including an automatic guest user, can see all 60 vendors and their events. The findings call has no per-user or per-organization check, and the event data is sent to the model provider when the chat answers. Not in scope for a demo with sample data.
+- Show company data only to signed-in users of that organization (scope every query by organization).
+- Decide which fields each role may see (for example hide actor names from non-leaders).
+- Review what is sent to the model provider, and log who viewed which finding.

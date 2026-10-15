@@ -49,7 +49,7 @@ The AI scaffolded the app and built each slice from a plan I approved. I made th
 
 ## 11. Gaps and next steps
 
-The biggest gap is that no person has reviewed these findings. The impact: a leader could act on a possible gap that turns out to be a missing record, not a missed step. The wording and the amber styling soften that, but they don’t remove it. Next, in order: a mobile layout, and a sentence from the model when a free-text question doesn’t match any card, since today those questions only get a card back.
+The biggest gap is that no person has reviewed these findings. The impact: a leader could act on a possible gap that turns out to be a missing record, not a missed step. The wording and the amber styling soften that, but they don’t remove it. Next, in order: protecting company data, which I did not do because this is sample data. Today anyone who opens the app, even as a guest, sees all 60 vendors. A real version shows data only to signed-in people in the right organization, and limits what each role can see. After that, a mobile layout, and a sentence from the model when a free-text question doesn’t match any card, since today those questions only get a card back.
 
 ## 12. What's next: from analysis to action
 
