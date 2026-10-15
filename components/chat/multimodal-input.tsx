@@ -474,11 +474,11 @@ function PureMultimodalInput({
       {!editingMessage &&
         !isLoading &&
         !hideSuggestions &&
-        messages.length === 0 &&
         attachments.length === 0 &&
         uploadQueue.length === 0 && (
           <SuggestedActions
             chatId={chatId}
+            compact={messages.length > 0}
             selectedVisibilityType={selectedVisibilityType}
             sendMessage={sendMessage}
           />
