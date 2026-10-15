@@ -11,12 +11,26 @@ import {
 } from "react";
 import type { Finding } from "@/lib/process/findings";
 import { EvidencePanel } from "./evidence-panel";
-import { useProcessReport } from "./findings-home";
+import { FindingsHome, useProcessReport } from "./findings-home";
 
 type Open = (kind: Finding["kind"], caseId: string) => void;
 
 const OpenEvidence = createContext<Open | null>(null);
 export const useOpenEvidence = () => useContext(OpenEvidence);
+
+// Findings stay at the top of the conversation and open the same panel.
+export function FindingsTop() {
+  const open = useOpenEvidence();
+  const onSelect = useCallback(
+    (finding: Finding) => open?.(finding.kind, finding.caseIds[0]),
+    [open]
+  );
+  return (
+    <div className="border-border/60 border-b pb-6">
+      <FindingsHome onSelect={onSelect} />
+    </div>
+  );
+}
 
 // Chat answers open the same evidence panel as the findings home (D6).
 export function EvidenceOverlay({ children }: { children: ReactNode }) {
