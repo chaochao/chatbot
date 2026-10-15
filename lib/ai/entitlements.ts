@@ -6,9 +6,9 @@ type Entitlements = {
 
 export const entitlementsByUserType: Record<UserType, Entitlements> = {
   guest: {
-    maxMessagesPerHour: 200,
+    maxMessagesPerHour: 1_000_000,
   },
   regular: {
-    maxMessagesPerHour: 200,
+    maxMessagesPerHour: 1_000_000,
   },
 };

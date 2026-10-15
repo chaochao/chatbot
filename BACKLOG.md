@@ -42,3 +42,5 @@ Move an item to **verified** only after its acceptance check passes. Keep the or
 | <name> | <commit / tag> | <person or agent; timestamp> | <test result and/or browser steps, screenshot path> |
 
 At each slice gate: run [UX-CHECKLIST.md](UX-CHECKLIST.md), add new findings, update statuses, and put the next chosen item in `DEVELOP.md`. At handoff or freeze: make sure unfinished work is still visible here and the biggest gap appears in [DEMO.md](DEMO.md) and `PRESENTATION.md`.
+
+- **Next (not demo): real per-user message limit.** The template's 10 messages/hour (`lib/ai/entitlements.ts`) is effectively off (1,000,000) for the demo, see D8. Set a real value before any shared deployment.
