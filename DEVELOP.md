@@ -2,11 +2,11 @@
 
 Single source of truth for progress. Any agent resuming work reads this first.
 
-**Phase:** 1 · Capture the brief
+**Phase:** 2 · Brainstorm and plan
 **Build started at:** 16:39 (Wed Oct 14) — Phase 5 at 18:24, freeze at 19:24
 **Last checkpoint:** _(tag)_
 **Now:** — (main)
-**Next:** Capture the interview prompt and notes in BRIEF.md. App runs locally (`pnpm dev`, :3000).
+**Next:** Phase 2 — propose 2–3 directions for "process vs SOP" findings with evidence; Chao picks.
 
 ## Domain
 _(entities, fields, relationships, UI vocabulary — filled in Phase 2)_
