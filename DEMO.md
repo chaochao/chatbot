@@ -4,41 +4,39 @@ Fill this after the core flow works. Keep the finished deck and Q&A in [PRESENTA
 
 ## Before presenting
 
-- **User and job:** <person/role> needs to <outcome>.
-- **Opening screen / URL:** <route with the intended selection and filters>.
-- **Known demo data:** <human-readable names and expected result>.
-- **Provider:** <live or disclosed mock; verified from the stream metadata>.
-- **Checkpoint:** <last tested presentation tag>.
-- **Biggest gap:** <what is missing, impact, smallest next fix>.
-- **Fallback:** <saved screenshots or recording paths from the tested build>.
+- **User and job:** A leader investigating vendor onboarding needs to see where practice differs from the written SOP, and decide which issue to look at first.
+- **Opening screen / URL:** `http://localhost:3000/` (no selection). Browser zoom 100%, window wide enough for the 520px panel.
+- **Known demo data:** 60 vendors. Finding 1: No recorded security review, 8 vendors, first is Vendor 07 (dashed "No recorded event" at step 4). Finding 2: Contract review before security approval, 8 vendors. Finding 3: "Request more info" is not in the SOP, 12 vendors. Finding 4: Over the 10-business-day target, Vendor 11, with an 11-day wait before Contract review.
+- **Provider:** Live GPT-4.1 mini via the OpenAI key. The three starter questions return cards from code (counts and timelines come from the event log, not the model).
+- **Checkpoint:** `main` at the last pushed commit; message limit is off for the demo (D8).
+- **Biggest gap:** A free-text question the two tools cannot answer (for example "Who is the slowest approver?") shows only a card, no explanation. Stay on the starter questions. Smallest fix: let the model add a sentence when no card matches. Mobile layout was skipped.
+- **Fallback:** `docs/screens/6-01` to `6-08` (home, panel, Vendor 11 gap, chat timeline, source opens evidence, sticky bar). Say it is a capture.
 
-Rehearse from the opening URL on the frozen build. Check data, credentials, server and browser zoom before the talk. Don't reset the database during the presentation. “Freeze” means docs, deck and rehearsal only; log new issues in BACKLOG.
+Rehearse from the opening URL. Check the dev server (`/ping`), the OpenAI key and browser zoom before the talk. Restart the dev server after any config change and send one test message. Don't reset the database during the presentation. "Freeze" means docs, deck and rehearsal only; log new issues in BACKLOG.
 
 ## Live script (about 5–7 minutes)
 
-Write exact labels and spoken sentences, not instructions to yourself such as “explain the value”. Lead with what the user sees and does, then why it matters. Remove rows for features outside the brief; don't imply an unbuilt action works.
-
 | Time | Click / visible result | Say |
 |---|---|---|
-| 0:00 | Open <main view>; point to <headline> | “<User> needs to <job>. The first thing they see is <insight>, so they know <next action>.” |
-| 0:45 | Select <named item>; show <evidence/relationships> | “This is <meaning in plain words>. The evidence comes from <source>; this check establishes <exact limited claim>.” |
-| 1:30 | Use <primary action> on that item; show result in place | “They can <action> where they're already looking. The result is <visible change>.” |
-| 2:15 | Use Undo, then repeat only if needed | “An accidental click is recoverable here.” |
-| 2:45 | Ask <prepared question>; show incremental output and named evidence | “The answer arrives as it is generated. This link opens <source name>; a linked record alone doesn't prove the claim.” |
-| 3:30 | Trigger the rehearsed failure/interruption below | “<Exact recovery line from the selected scenario>.” |
-| 4:30 | Retry; show a complete answer or the honest fallback | “Retry starts a new attempt. The earlier partial answer remains visible.” |
-| 5:15 | Show <saved result / reload / final summary>, if implemented | “The result is <user outcome>. The largest remaining gap is <gap>; I'd address it with <fix>.” |
+| 0:00 | Open `/`. Point to the headline "16 of 60 vendors have a possible gap in security review." | "A leader wants to know where onboarding differs from the SOP. The first thing they see is the answer: 16 of 60 vendors have a possible gap. They don't have to ask first." |
+| 0:45 | Click "No recorded security review". Panel opens on Vendor 07; point to the dashed "No recorded event" at step 4 and the quoted rule. | "Left is what the SOP says, right is what the records show. Step 4 has no recorded event. I say 'no recorded', not 'skipped': missing records don't prove the review didn't happen." |
+| 1:30 | Click the Vendor 19 chip, then back. Point to the dates and tools on an event. | "Every affected vendor is one click away, with the real events: who, which team, which tool, which date. Nothing is invented." |
+| 2:15 | Point to the next-step card. Click Copy (toast), then Dismiss, then Undo. | "The suggested next step is advice only; nothing is sent. Copy it, dismiss it, and an accidental dismiss is one click to undo. The leader stays in control." |
+| 2:45 | Click the open finding again (panel closes). Click "Over the 10-business-day target", then Vendor 11. Point to "Waited 11 days before Contract review". | "This one is about time. Instead of one big number, the panel shows where the wait was: 11 days between Security review and Contract review." |
+| 3:30 | Click outside to close. Click the starter question "What happened with Vendor 11?". | "Follow-up questions use the same data. The model picks which tool to call; the counts and timelines come from the event log, not from the model." |
+| 4:15 | In the chat answer, click the "Vanta · Jul 19" source chip. The evidence panel opens. | "Each source chip is traceable: it opens the same evidence panel, so the answer and the evidence stay connected." |
+| 5:00 | Scroll down the chat. Point to the findings bar that fades in at the top. | "The findings stay one click away while the conversation grows." |
+| 5:30 | Run the deliberate failure below. | See below. |
+| 6:15 | Back to the findings. | "Largest gap: free-text questions the tools can't answer show only a card. I'd let the model add one sentence there. I skipped mobile." |
 
 ## One deliberate failure or interruption
 
-Choose **one** predictable scenario and rehearse recovery. Never rely on an accidental outage.
-
 | Scenario | Setup and action | Expected UI | Say / recover |
 |---|---|---|---|
-| Stop mid-answer (default) | Use a sufficiently long prepared question; click Stop after text appears | Partial text remains, incomplete label, Retry | “The user can stop generation without losing what arrived.” Retry and let it finish. Verify server cancellation before the demo. |
-| API unavailable | In a local demo only, stop the API after loading the screen; trigger a request | Inline error with Try again, existing content retained | “The request failed, and the screen tells us how to recover.” Restart the API, verify health, then Try again. |
+| Unknown vendor (default) | Type "Tell me about Vendor 99" and send | A red inline line: No vendor named "Vendor 99" in the event log. Chat and findings stay usable | "If the data doesn't have it, the answer says so. It doesn't guess." Then click a starter question to continue. |
+| Findings fail to load (optional, local only) | Block `/api/process` in DevTools, reload | "Could not load the onboarding records. Your chat still works." with Try again | "The chat still works, and the screen tells you how to recover." Unblock, click Try again. |
 
-If recovery doesn't work after one attempt: “The live service isn't recovering. This is the last tested result; I'll show the saved capture and explain the limitation.” Open <fallback path>. Say explicitly that it is a capture. Don't debug live or call a stopped answer complete.
+If recovery doesn't work after one attempt: "The live service isn't recovering. This is the last tested result; I'll show the saved capture and explain the limitation." Open `docs/screens/6-01-home.png`. Say explicitly that it is a capture. Don't debug live.
 
 ## No IDs, no inflated claims
 
