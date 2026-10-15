@@ -266,3 +266,25 @@ test("clicking outside the panel closes it", async ({ page }) => {
   await page.getByText(/vendors have a possible gap/).click();
   await expect(panel).toBeHidden();
 });
+
+test("a compact findings bar follows the chat when the cards scroll away", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const input = page.getByPlaceholder("Ask anything...");
+  await input.fill("What happened with Vendor 11?");
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(3000);
+  await input.fill("hi");
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(3000);
+  await input.fill("hello");
+  await page.keyboard.press("Enter");
+  await page.waitForTimeout(3000);
+  const bar = page.getByRole("navigation", { name: "Findings" });
+  await expect(bar).toBeVisible();
+  await bar.getByRole("button", { name: /Over the 10/ }).click();
+  await expect(
+    page.getByRole("complementary", { name: "Over the 10-business-day target" })
+  ).toBeVisible();
+});

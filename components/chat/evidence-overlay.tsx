@@ -11,7 +11,7 @@ import {
 } from "react";
 import type { Finding } from "@/lib/process/findings";
 import { EvidencePanel, useCloseOnOutsideClick } from "./evidence-panel";
-import { FindingsHome, useProcessReport } from "./findings-home";
+import { FindingChip, FindingsHome, useProcessReport } from "./findings-home";
 
 type Open = (kind: Finding["kind"], caseId: string) => void;
 
@@ -23,21 +23,57 @@ const Selection = createContext<{ kind?: Finding["kind"]; close: () => void }>({
 });
 
 // Findings stay at the top of the conversation and open the same panel.
+// Once the cards scroll away, a compact bar of the same findings sticks to the top.
 export function FindingsTop() {
+  const { data } = useProcessReport();
   const open = useOpenEvidence();
   const { kind, close } = useContext(Selection);
+  const [cardsVisible, setCardsVisible] = useState(true);
+  const observer = useRef<IntersectionObserver | null>(null);
+  const cardsRef = useCallback((node: HTMLDivElement | null) => {
+    observer.current?.disconnect();
+    if (node) {
+      // Show the bar once the top of the cards has scrolled out of view.
+      observer.current = new IntersectionObserver(
+        ([entry]) => setCardsVisible(entry.boundingClientRect.top > 0),
+        { threshold: Array.from({ length: 21 }, (_, i) => i / 20) }
+      );
+      observer.current.observe(node);
+    }
+  }, []);
   const onSelect = useCallback(
     (finding: Finding) => open?.(finding.kind, finding.caseIds[0]),
     [open]
   );
   return (
-    <div className="border-border/60 border-b pb-6">
-      <FindingsHome
-        onDeselect={close}
-        onSelect={onSelect}
-        selectedKind={kind}
-      />
-    </div>
+    <>
+      <div className="sticky top-0 z-10 -mb-5 h-0 md:-mb-7">
+        {!!data && !cardsVisible && (
+          <nav
+            aria-label="Findings"
+            className="fade-in animate-in flex gap-2 overflow-x-auto border-border/60 border-b bg-background py-2 duration-200 motion-reduce:animate-none"
+          >
+            {data.findings.map((finding, index) => (
+              <FindingChip
+                finding={finding}
+                key={finding.kind}
+                number={index + 1}
+                onDeselect={close}
+                onSelect={onSelect}
+                selected={kind === finding.kind}
+              />
+            ))}
+          </nav>
+        )}
+      </div>
+      <div className="border-border/60 border-b pb-6" ref={cardsRef}>
+        <FindingsHome
+          onDeselect={close}
+          onSelect={onSelect}
+          selectedKind={kind}
+        />
+      </div>
+    </>
   );
 }
 

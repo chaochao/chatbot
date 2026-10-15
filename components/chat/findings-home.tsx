@@ -116,6 +116,46 @@ export function FindingsHeading({ report }: { report: ProcessReport }) {
   );
 }
 
+// Compact version of a finding card, for the sticky bar in a long chat.
+export function FindingChip({
+  finding,
+  number,
+  selected,
+  onSelect,
+  onDeselect,
+}: {
+  finding: Finding;
+  number: number;
+  selected: boolean;
+  onSelect: (finding: Finding) => void;
+  onDeselect: () => void;
+}) {
+  const handleClick = useCallback(
+    () => (selected ? onDeselect() : onSelect(finding)),
+    [selected, onDeselect, onSelect, finding]
+  );
+  return (
+    <button
+      aria-pressed={selected}
+      className={cn(
+        "inline-flex shrink-0 items-center gap-2 rounded-full border px-3 py-1.5 text-xs transition-colors duration-200 motion-reduce:transition-none",
+        "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+        selected
+          ? "border-amber-500/60 bg-amber-500/10 text-foreground"
+          : "border-border bg-card text-muted-foreground hover:bg-muted hover:text-foreground"
+      )}
+      onClick={handleClick}
+      type="button"
+    >
+      <span
+        aria-hidden
+        className={cn("size-2 rounded-full", SEVERITY_DOT[finding.severity])}
+      />
+      {number} · {finding.title}
+    </button>
+  );
+}
+
 function FindingCard({
   finding,
   selected,
