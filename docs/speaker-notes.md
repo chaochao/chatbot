@@ -17,7 +17,7 @@ The person I designed for is a leader who wants to know how vendor onboarding re
 
 ## 3. Scope
 
-Here’s what exists. Built: a findings home with a headline and ranked cards, an evidence panel, a next-step card that is advice only, and a chat that answers with cards and opens the same evidence panel. It handles Enter and Escape, and loading states. I cut two things on purpose: the mobile layout, and slice four. [Say in one sentence what slice four covered.] And some things are simply missing: there is no real message limit yet, the findings have not been reviewed by a person, and free-text questions the tools can’t answer only get a card back.
+Here’s what exists. Built: a findings home with a headline and ranked cards, an evidence panel, a next-step card that is advice only, and a chat that answers with cards and opens the same evidence panel. It handles Enter and Escape, and loading states. I cut two things on purpose: the mobile layout, and slice four. [Say in one sentence what slice four covered.] And some things are simply missing: the findings have not been reviewed by a person, and free-text questions the tools can’t answer only get a card back.
 
 ## 4. Live demo
 
@@ -45,11 +45,11 @@ I want to be clear about what I know here. What’s in place: findings are compu
 
 ## 10. How we used AI
 
-The AI scaffolded the app and built each slice from a plan I approved. I made the product calls, and I corrected it where it got things wrong. Four examples. The evidence panel couldn’t be closed by clicking outside it or on the open card. The chat repeated the card in prose and leaked an internal finding name. The sticky findings bar appeared too early. And a rate limit I had left in blocked the demo. A human decided at three gates: I approved each slice plan, I walked each slice in the browser, and tests ran before merge.
+The AI scaffolded the app and built each slice from a plan I approved. I made the product calls, and I corrected it where it got things wrong. Three examples. The evidence panel couldn’t be closed by clicking outside it or on the open card. The chat repeated the card in prose and leaked an internal finding name. The sticky findings bar appeared too early. A human decided at three gates: I approved each slice plan, I walked each slice in the browser, and tests ran before merge.
 
 ## 11. Gaps and next steps
 
-The biggest gap is that no person has reviewed these findings. The impact: a leader could act on a possible gap that turns out to be a missing record, not a missed step. The wording and the amber styling soften that, but they don’t remove it. Next, in order: a real message limit to replace the one I removed, a mobile layout, and a sentence from the model when a free-text question doesn’t match any card, since today those questions only get a card back.
+The biggest gap is that no person has reviewed these findings. The impact: a leader could act on a possible gap that turns out to be a missing record, not a missed step. The wording and the amber styling soften that, but they don’t remove it. Next, in order: a mobile layout, and a sentence from the model when a free-text question doesn’t match any card, since today those questions only get a card back.
 
 ## 12. What's next: from analysis to action
 

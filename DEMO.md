@@ -14,7 +14,7 @@ Fill this after the core flow works. Keep the finished deck and Q&A in [PRESENTA
 - **Opening screen / URL:** `http://localhost:3000/` (no selection). Browser zoom 100%, window wide enough for the 520px panel.
 - **Known demo data:** 60 vendors. Finding 1: No recorded security review, 8 vendors, first is Vendor 07 (dashed "No recorded event" at step 4). Finding 2: Contract review before security approval, 8 vendors. Finding 3: "Request more info" is not in the SOP, 12 vendors. Finding 4: Over the 10-business-day target, Vendor 11, with an 11-day wait before Contract review.
 - **Provider:** Live GPT-4.1 mini via the OpenAI key. The three starter questions return cards from code (counts and timelines come from the event log, not the model).
-- **Checkpoint:** `main` at the last pushed commit; message limit is off for the demo (D8).
+- **Checkpoint:** `main` at the last pushed commit.
 - **Biggest gap:** A free-text question the two tools cannot answer (for example "Who is the slowest approver?") shows only a card, no explanation. Stay on the starter questions. Smallest fix: let the model add a sentence when no card matches. Mobile layout was skipped.
 - **Fallback:** `docs/screens/6-01` to `6-08` (home, panel, Vendor 11 gap, chat timeline, source opens evidence, sticky bar). Say it is a capture.
 
