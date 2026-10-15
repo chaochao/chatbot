@@ -10,6 +10,7 @@ import {
   useState,
 } from "react";
 import type { Finding } from "@/lib/process/findings";
+import { cn } from "@/lib/utils";
 import { EvidencePanel, useCloseOnOutsideClick } from "./evidence-panel";
 import { FindingChip, FindingsHome, useProcessReport } from "./findings-home";
 
@@ -33,10 +34,9 @@ export function FindingsTop() {
   const cardsRef = useCallback((node: HTMLDivElement | null) => {
     observer.current?.disconnect();
     if (node) {
-      // Show the bar once the top of the cards has scrolled out of view.
-      observer.current = new IntersectionObserver(
-        ([entry]) => setCardsVisible(entry.boundingClientRect.top > 0),
-        { threshold: Array.from({ length: 21 }, (_, i) => i / 20) }
+      // Show the bar only once the whole list is out of view.
+      observer.current = new IntersectionObserver(([entry]) =>
+        setCardsVisible(entry.isIntersecting)
       );
       observer.current.observe(node);
     }
@@ -48,10 +48,13 @@ export function FindingsTop() {
   return (
     <>
       <div className="sticky top-0 z-10 -mb-5 h-0 md:-mb-7">
-        {!!data && !cardsVisible && (
+        {!!data && (
           <nav
             aria-label="Findings"
-            className="fade-in animate-in flex gap-2 overflow-x-auto border-border/60 border-b bg-background py-2 duration-200 motion-reduce:animate-none"
+            className={cn(
+              "flex gap-2 overflow-x-auto border-border/60 border-b bg-background py-2 transition-[opacity,visibility] duration-200 motion-reduce:transition-none",
+              cardsVisible ? "invisible opacity-0" : "visible opacity-100"
+            )}
           >
             {data.findings.map((finding, index) => (
               <FindingChip

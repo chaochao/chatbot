@@ -270,6 +270,7 @@ test("clicking outside the panel closes it", async ({ page }) => {
 test("a compact findings bar follows the chat when the cards scroll away", async ({
   page,
 }) => {
+  await page.setViewportSize({ height: 450, width: 1512 });
   await page.goto("/");
   const input = page.getByPlaceholder("Ask anything...");
   await input.fill("What happened with Vendor 11?");
@@ -282,6 +283,13 @@ test("a compact findings bar follows the chat when the cards scroll away", async
   await page.keyboard.press("Enter");
   await page.waitForTimeout(3000);
   const bar = page.getByRole("navigation", { name: "Findings" });
+  await expect(bar).toBeVisible();
+  // Back at the top, the full list is visible, so the bar goes away.
+  await page.getByTestId("message-user").first().scrollIntoViewIfNeeded();
+  await page.mouse.move(700, 200);
+  await page.mouse.wheel(0, -5000);
+  await expect(bar).toBeHidden();
+  await page.mouse.wheel(0, 5000);
   await expect(bar).toBeVisible();
   await bar.getByRole("button", { name: /Over the 10/ }).click();
   await expect(
