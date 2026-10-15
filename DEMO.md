@@ -1,5 +1,11 @@
 # DEMO — click, say, recover
 
+## Timing and checks (retro, mock 3)
+
+- **Start early.** Write this file and the deck prompt when the core flow works (after slice 2). At the freeze, only edit lines that changed.
+- **Two notes, both short.** The deck prompt asks for 3 to 5 sentences of speaker notes per slide, in plain words, with no placeholders or "DRAFT" lines. Also keep a one-page read-only reference (this file's script table, the data to point at, the failure line, the fallback) for when the deck is in full screen.
+- **Pre-demo deck check (about 5 minutes, full screen, slide by slide):** no empty image slots (a real screenshot or remove the slot); no bracketed or DRAFT text in slides or notes; no raw IDs; no cut-off text; every claim matches the app. Log what you fixed.
+
 Fill this after the core flow works. Keep the finished deck and Q&A in [PRESENTATION.md](PRESENTATION.md); use [DEVELOP.md](DEVELOP.md), [DECISIONS.md](DECISIONS.md) and [BACKLOG.md](BACKLOG.md) as evidence. This template works for any prompt. Replace every `<placeholder>` before rehearsal.
 
 ## Before presenting

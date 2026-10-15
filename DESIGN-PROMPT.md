@@ -17,6 +17,8 @@ First confirm in the morning: "Is it OK if I use Claude Design for the first UI 
 - Icons: lucide
 - Light / dark: both (next-themes)
 
+> **Retro (mock 3): one option at a time.** Three variations took longer than planned. Keep only the layout you recommend in the prompt below (delete the other two), paste it, then use Prompt 2 with one change per round. Ask for another layout only if the first is wrong. Cap: 15 minutes.
+
 ## Prompt 1 — three variations (paste, fill `<…>`, attach `design/reference/*` and any data sample)
 
 ```text
