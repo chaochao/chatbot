@@ -66,3 +66,21 @@ test("real fixture matches the numbers we demo", () => {
   assert.equal(count("over_target"), 1);
   assert.equal(report.sop.length, 7);
 });
+
+test("chat tools return code-computed facts", async () => {
+  const { getFindings, getVendorTimeline } = await import(
+    "../ai/tools/process"
+  );
+  const run = (t: unknown, input: unknown) =>
+    (t as { execute: (i: unknown) => unknown }).execute(input) as any;
+  const f = run(getFindings, { kind: "contract_before_security" });
+  assert.equal(f.findings[0].count, f.findings[0].vendors.length);
+  assert.equal(
+    run(getVendorTimeline, { vendor: "Vendor 11" }).vendor,
+    "Vendor 11"
+  );
+  assert.match(
+    run(getVendorTimeline, { vendor: "Vendor 999" }).error,
+    /No vendor/
+  );
+});

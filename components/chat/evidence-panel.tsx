@@ -35,7 +35,7 @@ const focusRing =
   "focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:transition-none";
 const accentText = "text-amber-800 dark:text-amber-300";
 
-function formatDate(timestamp: string) {
+export function formatDate(timestamp: string) {
   return new Intl.DateTimeFormat("en-US", {
     day: "numeric",
     month: "short",

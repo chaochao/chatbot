@@ -20,6 +20,7 @@ import { SparklesIcon } from "./icons";
 import { MessageActions } from "./message-actions";
 import { MessageReasoning } from "./message-reasoning";
 import { PreviewAttachment } from "./preview-attachment";
+import { FindingsResult, TimelineResult } from "./process-tool-parts";
 import { Weather } from "./weather";
 
 function WaitingText() {
@@ -185,6 +186,23 @@ const PurePreviewMessage = ({
         >
           <MessageResponse>{sanitizeText(part.text)}</MessageResponse>
         </MessageContent>
+      );
+    }
+
+    if (type === "tool-getFindings" || type === "tool-getVendorTimeline") {
+      if (part.state === "output-available") {
+        return type === "tool-getFindings" ? (
+          <FindingsResult key={part.toolCallId} output={part.output as never} />
+        ) : (
+          <TimelineResult key={part.toolCallId} output={part.output as never} />
+        );
+      }
+      return (
+        <p className="text-muted-foreground text-sm" key={part.toolCallId}>
+          {part.state === "output-error"
+            ? "Could not read the process data. Try again."
+            : "Checking the event log…"}
+        </p>
       );
     }
 
