@@ -433,7 +433,7 @@ function NextStepCard({
         {events.map((event) => (
           <a
             className={cn(
-              "rounded-md border border-border bg-card px-2 py-1 text-xs hover:bg-muted",
+              "inline-flex items-center rounded-md border border-border bg-card px-2 py-1 text-xs hover:bg-muted",
               focusRing
             )}
             href={`#event-${event.id}`}
@@ -445,7 +445,7 @@ function NextStepCard({
         {finding.sopStep ? (
           <a
             className={cn(
-              "rounded-md border border-border bg-card px-2 py-1 hover:bg-muted",
+              "inline-flex items-center rounded-md border border-border bg-card px-2 py-1 text-xs hover:bg-muted",
               focusRing
             )}
             href={`#sop-step-${finding.sopStep}`}
@@ -453,12 +453,12 @@ function NextStepCard({
             SOP step {finding.sopStep}
           </a>
         ) : (
-          <Badge variant="outline">
+          <span className="inline-flex items-center rounded-md border border-border bg-card px-2 py-1 text-xs">
             SOP v3 ·{" "}
             {finding.kind === "over_target"
               ? "10-business-day target"
               : "steps 1–7"}
-          </Badge>
+          </span>
         )}
       </nav>
       <div className="mt-4 flex items-center justify-between gap-2">
