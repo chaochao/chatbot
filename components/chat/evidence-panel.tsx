@@ -43,6 +43,8 @@ export function formatDate(timestamp: string) {
   }).format(new Date(timestamp));
 }
 
+// The SOP rule starts with "(Team, in Tool)." which the row already shows.
+const PARENTHETICAL = /^\([^)]*\)\.?\s*/;
 const GAP_DAYS = 3;
 const DAY_MS = 86_400_000;
 
@@ -195,7 +197,7 @@ export function EvidencePanel({
                             <blockquote
                               className={cn("mt-2 leading-relaxed", accentText)}
                             >
-                              “{step.rule}”
+                              “{step.rule.replace(PARENTHETICAL, "")}”
                             </blockquote>
                           )}
                         </div>
