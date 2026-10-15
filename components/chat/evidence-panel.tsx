@@ -46,6 +46,25 @@ export function formatDate(timestamp: string) {
 const GAP_DAYS = 3;
 const DAY_MS = 86_400_000;
 
+// Clicking anywhere outside the panel (not on a button or link) closes it.
+export function useCloseOnOutsideClick(active: boolean, close: () => void) {
+  useEffect(() => {
+    if (!active) {
+      return;
+    }
+    function onPointerDown(event: PointerEvent) {
+      if (
+        event.target instanceof Element &&
+        !event.target.closest("#evidence-panel, button, a, [role='button']")
+      ) {
+        close();
+      }
+    }
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => document.removeEventListener("pointerdown", onPointerDown);
+  }, [active, close]);
+}
+
 export function EvidencePanel({
   finding,
   findingNumber,

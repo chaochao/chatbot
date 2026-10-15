@@ -4,7 +4,7 @@ import { useSearchParams } from "next/navigation";
 import { type ReactNode, useCallback, useEffect, useRef } from "react";
 import type { Finding } from "@/lib/process/findings";
 import { cn } from "@/lib/utils";
-import { EvidencePanel } from "./evidence-panel";
+import { EvidencePanel, useCloseOnOutsideClick } from "./evidence-panel";
 import {
   FindingsHeading,
   FindingsHome,
@@ -47,6 +47,8 @@ export function FindingsWorkspace({ footer }: { footer?: ReactNode }) {
     updateSelection();
     requestAnimationFrame(() => trigger?.focus());
   }, [finding?.kind]);
+
+  useCloseOnOutsideClick(!!finding, closePanel);
 
   const selectVendor = useCallback(
     (caseId: string) => {

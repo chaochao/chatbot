@@ -10,7 +10,7 @@ import {
   useState,
 } from "react";
 import type { Finding } from "@/lib/process/findings";
-import { EvidencePanel } from "./evidence-panel";
+import { EvidencePanel, useCloseOnOutsideClick } from "./evidence-panel";
 import { FindingsHome, useProcessReport } from "./findings-home";
 
 type Open = (kind: Finding["kind"], caseId: string) => void;
@@ -61,6 +61,8 @@ export function EvidenceOverlay({ children }: { children: ReactNode }) {
     (caseId: string) => setSel((s) => s && { ...s, caseId }),
     []
   );
+
+  useCloseOnOutsideClick(!!sel, close);
 
   useEffect(() => {
     if (!sel) {

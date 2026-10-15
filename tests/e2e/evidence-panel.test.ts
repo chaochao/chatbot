@@ -251,3 +251,18 @@ test("double-click on the open finding closes the panel", async ({ page }) => {
   await card.dblclick();
   await expect(panel).toBeHidden();
 });
+
+test("clicking outside the panel closes it", async ({ page }) => {
+  await page.goto("/");
+  await page
+    .getByRole("button", { exact: true, name: "No recorded security review" })
+    .click();
+  const panel = page.getByRole("complementary", {
+    name: "No recorded security review",
+  });
+  await expect(panel).toBeVisible();
+  await panel.getByRole("columnheader", { name: /SOP v3/ }).click();
+  await expect(panel).toBeVisible();
+  await page.getByText(/vendors have a possible gap/).click();
+  await expect(panel).toBeHidden();
+});
